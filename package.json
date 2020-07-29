@@ -62,5 +62,11 @@
   },
   "resolutions": {
     "natives": "1.1.6"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "bootstrap": "^5.0.0-alpha1",
+    "mmenu-js": "^8.5.14",
+    "popper.js": "^1.16.1"
   }
 }

@@ -1,0 +1,6 @@
+@mixin fa($character: '', $set: fas, $pos: before) {
+    @extend .#{$set};
+    &::#{$pos} {
+        content: fa-content($character);
+    }
+}

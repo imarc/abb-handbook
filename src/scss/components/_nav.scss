@@ -1,0 +1,29 @@
+/**
+ * Components > Nav
+ * Extends Bootstrap’s nav.scss
+ */
+
+.nav-link {
+    // v4 @include transition($link-color-transition);
+    // color: $blue-200;
+}
+
+.nav-dark {
+    .nav-link {
+        color: $nav-dark-color;
+        &:hover,
+        &:focus {
+            color: $nav-dark-hover-color;
+        }
+    }
+    .nav-link.disabled {
+        color: $nav-dark-disabled-color;
+        @include media-breakpoint-up(lg) {
+            color: #ff0000;
+        }
+    }
+    .nav-link.active {
+        color: $nav-dark-link-active-color;
+    }
+}
+

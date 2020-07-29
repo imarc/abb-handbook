@@ -1,0 +1,61 @@
+/**
+ * Components > Videobg
+ */
+
+.videobg {
+    @include padding-bottom($videobg-padding-y);
+    @include padding-top($videobg-padding-y);
+    position: relative;
+    .videobg-video {
+        height: auto;
+        left: 50%;
+        max-width: none;
+        min-height: 100%;
+        min-width: 100%;
+        position: relative;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: auto;
+
+        @supports(object-fit: cover) {
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        @supports (object-fit: cover) and (-ms-ime-align:auto) {
+            // object-fit patch for Edge where doesn’t work for video elements
+            height: auto;
+            width: auto;
+        }
+    }
+    .videobg-placeholder {
+        display: none;
+    }
+    .videobg-screen {
+        height: 100%;
+        left: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: $zindex-1;
+    }
+    .videobg-body {
+        position: relative;
+        z-index: $zindex-2;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .videobg-video {
+            visibility: hidden;
+        }
+        .videobg-placeholder {
+            display: block;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+/**
+ * Components > Buttons
+ * Extends Bootstrap’s buttons.scss
+ */
+
+.btn-taco {
+    //background-image: linear-gradient(to right, #fbca49 0%, #ee9516 100%);
+    @include button-size($btn-padding-y, 2.5rem, 31.1px, 8px);
+    @include button-variant(gold, gold, $hover-background: purple, $hover-border: purple);
+}

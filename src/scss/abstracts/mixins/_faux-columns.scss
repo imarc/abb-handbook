@@ -1,0 +1,35 @@
+/**
+ * Faux columns
+ * Create edge-to-edge background colors starting at a certain `$breakpoint`
+ */
+
+@mixin faux-columns(
+    $cols,
+    $colorTwo,
+    $colorOne: transparent,
+    $col-selector: 'col-',
+    $row-selector: 'row'
+) {
+    $col-percent: $cols / $grid-columns;
+    $col-width: $col-percent * $container-max;
+
+    // set backgrounds on at small screen
+    .#{$row-selector} > [class^='#{$col-selector}']:nth-child(1) {
+        background-image: linear-gradient(to bottom, $colorOne, $colorOne);
+    }
+
+    .#{$row-selector} > [class^='#{$col-selector}']:nth-child(2) {
+        background-image: linear-gradient(to bottom, $colorTwo, $colorTwo);
+    }
+
+    @include media-breakpoint-up(xl) {
+        background-image: linear-gradient(to right, $colorOne calc((#{$col-percent} * 100%) + ( ((#{$grid-gutter-width} / 2) - #{$container-padding-x}) / 2)), $colorTwo 1%);
+        .#{$row-selector} > [class^="#{$col-selector}"]:nth-child(n) {
+            background-image: none;
+        }
+    }
+
+    @include media-breakpoint-up(xxl) {
+        background-image: linear-gradient(to right, $colorOne calc((50vw - (#{$container-max} / 2) + #{$col-width})), $colorTwo 1%);
+    }
+}

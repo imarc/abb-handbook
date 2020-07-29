@@ -1,0 +1,11 @@
+/**
+ * Components > Hero
+ */
+
+.hero {
+    @include padding-bottom($hero-padding-y);
+    @include padding-top($hero-padding-y);
+    background-color: $primary;
+    background-size: cover;
+    color: color-contrast($primary);
+}

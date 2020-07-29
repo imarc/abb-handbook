@@ -1,0 +1,22 @@
+// Footer
+
+.footer-primary-accent {
+    @include faux-columns(9, $blue-900, $row-selector: 'footer-primary-accent-row');
+}
+
+.footer-primary-nav-item {
+    font-size: $font-size-sm;
+}
+
+.footer-primary-nav-link {
+    @include transition($transition-base);
+}
+
+.footer-primary-legal {
+    background-color: $gray-100;
+}
+
+
+[class^="col"] {
+    //box-shadow: inset 0 0 0 2px rgba(0,0,0,0.25);
+}

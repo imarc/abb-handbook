@@ -1,0 +1,41 @@
+/**
+ * Components > Accordion
+ */
+
+.accordion-trigger {
+    text-align: left;
+    width: 100%;
+}
+
+.accordion-trigger.collapsed .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.accordion {
+    @include accordion-size($accordion-padding-x, $accordion-padding-y, $font-size-base);
+}
+
+// Variants
+
+.accordion-minimal {
+    @include accordion-variant($white, $accordion-border-width, 0, $gray-400);
+}
+
+.accordion-primary {
+    @include accordion-variant($primary, $accordion-border-width, $accordion-border-radius);
+}
+
+.accordion-coral {
+    @include accordion-variant($coral, $accordion-border-width, $accordion-border-radius);
+}
+
+
+// Sizing
+
+.accordion-lg {
+    @include accordion-size($accordion-padding-x-lg, $accordion-padding-y-lg, $font-size-md);
+}
+
+.accordion-sm {
+    @include accordion-size($accordion-padding-x-sm, $accordion-padding-y-sm, $font-size-sm);
+}

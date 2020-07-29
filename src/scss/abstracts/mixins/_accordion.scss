@@ -1,0 +1,38 @@
+/**
+ * Abtracts > Mixins > Accordion
+ */
+
+@mixin accordion-variant($background, $border-width, $border-radius, $border-color: transparent) {
+    .accordion-trigger {
+        background-color: $background;
+        border-bottom: $border-width solid $border-color;
+        border-radius: $border-radius;
+        border-top: $border-width solid $border-color;
+        color: color-contrast($background);
+        &:hover {
+            background-color: tint-color($background, 2);
+        }
+
+        @if $enable-rounded {
+            border-radius: $border-radius;
+        }
+
+        @if $enable-rounded == false {
+            border-radius: 0;
+        }
+
+    }
+    .accordion-body {
+        background-color: tint-color($background, 11);
+    }
+}
+
+@mixin accordion-size($padding-x, $padding-y, $font-size) {
+    .accordion-trigger {
+        font-size: $font-size;
+        padding: $padding-y $padding-x;
+    }
+    .accordion-body {
+        padding: $padding-y $padding-x;
+    }
+}

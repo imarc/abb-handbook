@@ -1,0 +1,83 @@
+/**
+ * Components > Nav mobile
+ * Extends mmenu’s functionality
+ */
+
+:root {
+    --mm-listitem-size: calc(#{$font-size-base} * 2.5);
+    --mm-navbar-size: var(--mm-listitem-size);
+}
+
+/* stylelint-disable */
+#nav-mobile:not(.mm-menu) {
+    display: none;
+}
+
+.mm-navbar {
+    font-size: $font-size-xs;
+}
+
+.mm-navbar-sm {
+    background-color: var(--mm-color-selector-background);
+    color: var(--mm-color-selector-text);
+    padding-bottom: $mm_panelPadding / 2;
+    padding-left: $mm_panelPadding;
+    padding-right: $mm_panelPadding;
+    padding-top: $mm_panelPadding / 2;
+}
+
+.mm-selector {
+    padding-bottom: $mm_panelPadding;
+    padding-left: $mm_panelPadding;
+    padding-right: $mm_panelPadding;
+    padding-top: $mm_panelPadding;
+}
+
+@if ($mm_include_themes_white) {
+    .mm-menu_theme-white {
+        --mm-color-border: #{$gray-200};
+        --mm-color-button: #{$primary};
+        --mm-color-text: #{$primary};
+        --mm-color-text-dimmed: #{$body-color};
+        --mm-color-background: #{$white};
+        --mm-color-selector-background: #{$primary};
+        --mm-color-selector-text: #{$white};
+        --mm-color-background-highlight: rgba(0, 0, 0, 0.06);
+        --mm-color-background-emphasis: rgba(0, 0, 0, 0.03);
+        --mm-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        --mm-color-selector-background: #{$primary};
+    }
+}
+
+@if ($mm_include_themes_dark) {
+    .mm-menu_theme-dark {
+        --mm-color-border: #{$black};
+        --mm-color-button: #{$white};
+        --mm-color-text: #{$white};
+        --mm-color-text-dimmed: #{$gray-200};
+        --mm-color-background: #{$body-color};
+        --mm-color-background-highlight: rgba(255, 255, 255, 0.08 );
+        --mm-color-background-emphasis: rgba(0, 0, 0, 0.1 );
+        --mm-shadow: none;
+        --mm-color-selector-background: #{$primary};
+    }
+}
+
+// Do not transform the site shell if at desktop breakpoint
+// This can happen if you open the mobile menu at small screen, and then increase the browser width to desktop breakpoint
+@include media-breakpoint-up(lg) {
+    .mm-wrapper_opening .mm-menu_offcanvas.mm-menu_opened ~ .mm-slideout {
+        transform: none;
+    }
+}
+
+@if ( $mm_include_pagedim_default or $mm_include_pagedim_black or $mm_include_pagedim_white ) {
+    @include media-breakpoint-up(lg) {
+        .mm-wrapper_opening [class*="mm-menu_pagedim"].mm-menu_opened {
+            ~ .mm-wrapper__blocker {
+                opacity: 0;
+                transition: none;
+            }
+        }
+	}
+}
