@@ -3,6 +3,27 @@ languageCode = "en-us"
 languageLang = "en"
 title = "ABB Handbook"
 
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+[Permalinks]
+  post = "post/:slug"
+
+[[params.menu]]
+  name = "blog"
+  url = "post/"
+
+[[params.menu]]
+  name = "post series"
+  url = "series/"
+
+[[params.menu]]
+  name = "creative"
+  url = "creative/"
+
+
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details:
 # https://gohugo.io/getting-started/configuration/#toml-configuration

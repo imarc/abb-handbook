@@ -2,11 +2,26 @@
  * Atlantic Broadband
  * Author: imarc.com
  *
- * These styles power the Atlantic broadband handbook site – an area that 
- * documents creative, development, and more.
+ * These styles are used on the Atlantic broadband Handbook site only
+ * Handbook documents creative, development, and more.
  */
 
- .hb {
+.hb-logo {
+    max-width: 150px;
+}
 
+ .hb-sidebar {
+    background-color: $gray-100;
+    top: 0;
+    @include media-breakpoint-up(md) {
+        border-right: 1px solid darken(#f8f9fa, 10%);
+        flex: 0 0 220px;
+        height: 100vh;
+        position: sticky;
+    }
  }
+
+
+
+
 

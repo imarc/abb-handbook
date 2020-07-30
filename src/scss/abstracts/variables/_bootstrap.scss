@@ -326,7 +326,7 @@ $container-max: map-get($container-max-widths, xxl);
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns: 12 !default;
-$grid-gutter-width: 4rem;
+$grid-gutter-width: 2.5rem;
 $grid-row-columns: 6 !default;
 
 $gutters: $spacers !default;
