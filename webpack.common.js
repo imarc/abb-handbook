@@ -20,7 +20,7 @@ module.exports = {
         loader: "file-loader?name=/[hash].[ext]"
       },
 
-      {test: /\.json$/, loader: "json-loader"},
+      {test: /\.json$/, exclude: /node_modules/, loader: "json-loader"},
 
       {
         loader: "babel-loader",

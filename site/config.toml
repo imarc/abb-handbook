@@ -3,25 +3,24 @@ languageCode = "en-us"
 languageLang = "en"
 title = "ABB Handbook"
 
-[taxonomies]
-  category = "categories"
-  series = "series"
-  tag = "tags"
-
-[Permalinks]
-  post = "post/:slug"
-
-[[params.menu]]
-  name = "blog"
-  url = "post/"
-
-[[params.menu]]
-  name = "post series"
-  url = "series/"
-
-[[params.menu]]
-  name = "creative"
-  url = "creative/"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xhtml = false
 
 
 # RSS, categories and tags disabled for an easy start

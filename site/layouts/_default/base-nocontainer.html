@@ -1,16 +1,3 @@
-<!doctype html>
-<html lang="{{ $.Site.Language.Lang }}">
-
-    {{ partial "head" . }}
-
-    <body>
-
-        {{ block "main" . }}{{end}}
-
-        {{ $script := .Site.Data.webpack.main }}
-        {{ with $script.js }}
-            <script src="{{ relURL . }}"></script>
-        {{ end }}
-    </body>
-
-</html>
+{{ define "main" }}
+    {{ .Content }}
+{{ end }}

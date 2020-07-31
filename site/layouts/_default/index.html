@@ -8,16 +8,20 @@
             <div class="col-md">
                 <div class="hero">
                     <div class="px-4 px-md-8">
-                        {{.Content}}
+                        <h1>
+                            {{.Title}}
+                        </h1>
+                        <p>
+                            {{.Params.subtitle}}
+                        </p>
                     </div>
                 </div>
 
                 <div class="content">
                     <div class="px-4 px-md-8 py-5">
-
-
-
-
+                        <div>
+                            {{.Content}}
+                        </div>
                     </div>
                 </div>
             </div>

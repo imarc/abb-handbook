@@ -1,0 +1,5 @@
+sections = [
+  {title = 'Creative', pages = [ {title = 'Colors'}, {title = 'Sketch'} ]},
+  {title = 'Development', pages = [ {title = 'HTML'}, {title = 'Sass'} ]},
+  {title = 'About', pages = [ {title = 'Imarc'}]}
+]

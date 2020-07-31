@@ -6,22 +6,24 @@
  * Handbook documents creative, development, and more.
  */
 
+$footer-height: 3rem;
+
 .hb-logo {
     max-width: 150px;
 }
 
- .hb-sidebar {
+.hb-sidebar {
     background-color: $gray-100;
     top: 0;
     @include media-breakpoint-up(md) {
         border-right: 1px solid darken(#f8f9fa, 10%);
         flex: 0 0 220px;
-        height: 100vh;
+        height: calc(100vh - #{$footer-height});
         position: sticky;
     }
- }
+}
 
-
-
-
-
+.hb-footer {
+    background-color: $gray-800;
+    height: $footer-height;
+}

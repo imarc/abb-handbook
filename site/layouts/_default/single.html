@@ -1,5 +1,28 @@
-{{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
-<article class="content">
-  <main>{{- .Content -}}</main>hello
-</article>
+{{ define "main" }}
+<div class="container-fluid p-0">
+    <main aria-role="main" id="main">
+        <div class="row g-0">
+            <div class="hb-sidebar">
+                {{ partial "sidebar" . }}
+            </div>
+            <div class="col-md">
+                <div class="hero-light py-4">
+                    <div class="px-4 px-md-8">
+                        <h1 class="m-0">
+                            {{.Title}}
+                        </h1>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="px-4 px-md-8 py-5">
+                        <div>
+                            {{.Content}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
 {{ end }}

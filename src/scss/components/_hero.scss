@@ -9,3 +9,8 @@
     background-size: cover;
     color: color-contrast($primary);
 }
+
+.hero-light {
+    background-color: $gray-200;
+    color: color-contrast($gray-200);
+}

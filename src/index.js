@@ -1,6 +1,11 @@
-// JS Goes here - ES6 supported
+import './scss/main.scss'
 
-import "./scss/main.scss";
 
-// Say hello
-console.log("🦊 Hello! Edit me in src/index.js");
+/**
+ * Dependencies
+ */
+import 'popper.js/dist/popper.min.js'
+import bootstrap from 'bootstrap'
+import 'mmenu-js/dist/mmenu.js'
+import 'mmenu-js/dist/core/oncanvas/mmenu.oncanvas.js'
+import 'mmenu-js/dist/addons/keyboardnavigation/mmenu.keyboardnavigation.js'
