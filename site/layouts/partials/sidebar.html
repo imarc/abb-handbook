@@ -24,19 +24,19 @@
                 {{ $group_slug := $group.title | urlize }}
                 {{ $is_active_group := eq $.Page.Params.group $group_slug }}
 
-                <li class="mb-2{{ if $is_active_group }} active{{ end }}">
-                    <a class="d-inline-flex align-items-center font-weight-bolder rounded{{ if not $is_active_group }} collapsed{{ end }}" data-toggle="collapse" href="#{{ $group_slug }}-collapse" role="button" aria-expanded="{{ $is_active_group }}"{{ if $is_active_group }} aria-current="true"{{ end }}>
+                <li class="border-bottom py-2 ">
+                    <a class="d-inline-flex align-items-center font-weight-bolder rounded{{ if not $is_active_group }} collapsed{{ end }}{{ if $is_active_group }} hb-parent-active{{ end }}" data-toggle="collapse" href="#{{ $group_slug }}-collapse" role="button" aria-expanded="{{ $is_active_group }}"{{ if $is_active_group }} aria-current="true"{{ end }}>
                         {{ $group.title }}
                     </a>
 
                     {{ if $group.pages }}
-                    <ul class="list-unstyled mb-1 collapse{{ if $is_active_group }} show{{ end }}" id="{{ $group_slug }}-collapse">
+                    <ul class="list-unstyled mt-1 collapse{{ if $is_active_group }} show{{ end }}" id="{{ $group_slug }}-collapse">
                         {{ range $item := $group.pages}}
                             {{ $item_slug := $item.title | urlize }}
                             {{ $is_active := and $is_active_group (eq $page_slug $item_slug) }}
                             {{ $href := printf "/docs/%s/%s/" $group_slug $item_slug }}
 
-                            <li class="mb-1"><small><a href="{{ $href }}" class="d-inline-flex align-items-center rounded{{ if $is_active }} active{{ end }}"{{ if $is_active }} aria-current="page"{{ end }}>{{ $item.title }}</a></small></li>
+                            <li class="mb-1"><small><a href="{{ $href }}" class="d-inline-flex align-items-center rounded{{ if $is_active }} hb-link-active{{ end }}"{{ if $is_active }} aria-current="page"{{ end }}>{{ $item.title }}</a></small></li>
                         {{ end }}
                     </ul>
                     {{ end }}

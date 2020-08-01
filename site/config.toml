@@ -2,6 +2,7 @@ baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
 title = "ABB Handbook"
+pygmentsUseClasses = true
 
 [markup]
   [markup.goldmark]
@@ -21,7 +22,15 @@ title = "ABB Handbook"
       hardWraps = false
       unsafe = true
       xhtml = false
-
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = false
+    tabWidth = 4
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details:

@@ -61,7 +61,7 @@ $colors: (
 // scss-docs-end colors-map
 
 $primary: $blue !default;
-$secondary: $gray-600 !default;
+$secondary: $coral;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
@@ -991,7 +991,7 @@ $pagination-disabled-border-color: $gray-300 !default;
 // Cards
 
 $card-spacer-y: $spacer !default;
-$card-spacer-x: $spacer !default;
+$card-spacer-x: 1.25rem;
 $card-title-spacer-y: $spacer / 2 !default;
 $card-border-width: $border-width !default;
 $card-border-radius: $border-radius !default;

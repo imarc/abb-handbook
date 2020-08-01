@@ -4,14 +4,16 @@
 */
 
 $utilities: (
-    // 'font-size': (
-    //     property: font-size,
-    //     class: fz,
-    //     responsive: true,
-    //     values: (
-    //         xxs: $font-size-base * 0.563,
-    //         xs: $font-size-base * 0.75,
-    //     )
-    // )
+    'font-size': (
+        property: font-size,
+        class: fz,
+        responsive: true,
+        values: (
+            xxs: $font-size-base * 0.563,
+            xs: $font-size-base * 0.75,
+            sm: $font-size-base * 0.875,
+            md: $font-size-base * 1.333,
+        )
+    )
 );
 
