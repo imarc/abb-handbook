@@ -1,18 +1,21 @@
 <!doctype html>
-<html lang="{{ $.Site.Language.Lang }}">
+<html class="h-100" lang="{{ $.Site.Language.Lang }}">
 
     {{ partial "head" . }}
 
-    <body>
+    <body class="h-100">
+        <div class="hb-shell d-flex flex-column h-100">
+            <div class="flex-grow-1">
+                {{ block "main" . }} {{end}}
+            </div>
 
-        {{ block "main" . }} {{end}}
+            {{ block "footer" . }}{{ partial "footer" . }}{{end}}
 
-        {{ block "footer" . }}{{ partial "footer" . }}{{end}}
-
-        {{ $script := .Site.Data.webpack.main }}
-        {{ with $script.js }}
-            <script src="{{ relURL . }}"></script>
-        {{ end }}
+            {{ $script := .Site.Data.webpack.main }}
+            {{ with $script.js }}
+                <script src="{{ relURL . }}"></script>
+            {{ end }}
+        </div>
 
     </body>
 

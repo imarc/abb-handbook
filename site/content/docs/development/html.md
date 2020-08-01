@@ -15,3 +15,6 @@ Dev Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est no
 </div>
 {{< /highlight >}}
 
+<a href="/components/accordion">
+    Accordion <i class="fas fa-external-link-alt"></i>
+</a>

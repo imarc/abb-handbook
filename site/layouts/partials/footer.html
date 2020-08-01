@@ -1,5 +1,9 @@
-<div class="hb-footer d-flex align-items-center justify-content-center">
+<div class="hb-footer d-flex flex-shrink-0 align-items-center justify-content-center">
     <div class="text-light">
-        <small><a class="link-light" href="https://imarc.com">Imarc</a> &bull; <a class="link-light" href="https://atlanticbb.com">Atlantic Broadband</a></small>
+        {{ with .Params.component }}
+            <small><a class="link-light" href="{{ "/" | relURL }}">← Back to ABB Handbook</a></small>
+        {{ else }}
+            <small><a class="link-light" href="https://imarc.com">Imarc</a> &bull; <a class="link-light" href="https://atlanticbb.com">Atlantic Broadband</a></small>
+        {{ end }}
     </div>
 </div>

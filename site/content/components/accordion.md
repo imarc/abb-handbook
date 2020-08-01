@@ -3,6 +3,7 @@ title: 'accordion'
 date: 2020-07-22
 draft: false
 layout: 'base-container'
+component: true
 ---
 
 <div class="accordion accordion-primary" id="accordionExamplePrimary">

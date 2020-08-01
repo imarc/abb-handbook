@@ -4,8 +4,12 @@
  *
  * These styles are used on the Atlantic broadband Handbook site only
  * Handbook documents creative, development, and more.
+ *
+ * - General handbook styles
+ * - Syntax highlighting
  */
 
+ // General handbook styles
 $sidebar-width: 220px;
 $footer-height: 3rem;
 
@@ -26,7 +30,9 @@ $footer-height: 3rem;
 }
 
 .hb-main {
-    max-width: calc(100% - 220px);
+    @include media-breakpoint-up(md) {
+        max-width: calc(100% - 220px);
+    }
 }
 .hb-footer {
     background-color: $gray-800;
@@ -44,14 +50,11 @@ $footer-height: 3rem;
 }
 
 
-
-
-
-
-
+// Syntax highlighting
 .highlight {
     background-color: $gray-100;
     color: inherit;
+    margin-bottom: $paragraph-margin-bottom;
     padding: 1rem;
 }
 
