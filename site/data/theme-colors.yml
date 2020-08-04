@@ -1,0 +1,9 @@
+- name: primary
+  hsl: "#3b8fde"
+  hex: "hsl(209, 71%, 55%)"
+- name: secondary
+  hsl: "hsl(8, 87%, 71%)"
+  hex: "#f58675"
+- name: success
+  hsl: "hsl(141, 72%, 62%)"
+  hex: "#58e489"

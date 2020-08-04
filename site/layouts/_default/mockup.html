@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="{{ $.Site.Language.Lang }}">
+
+    {{ partial "head" . }}
+
+    <body id="shell">
+
+        <a href="#main" class="sr-only">Skip to main content</a>
+        <div id="app">
+
+            <div class="masthead">
+                <div class="masthead-utility d-none d-lg-block">
+                    <div class="container-xxl">
+                        <div class="row justify-content-lg-between">
+                            <div class="col">
+                                <ul class="nav nav-dark nav-pills">
+                                    <li class="nav-item">
+                                        <a class="nav-link rounded-0 active" href="#">For Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link rounded-0" href="#">For Business</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link rounded-0" href="#">My World</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-auto ml-lg-auto">
+                                <ul class="nav nav-dark">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fas fa-user-circle mr-1"></i> My Account</a>
+                                    </li>
+                                    <li class="nav-item pipe">
+                                        <a class="nav-link" href="#">Español</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-3 py-lg-4">
+                    <div class="container-xxl">
+                        <div class="masthead-body">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <div class="masthead-brand">
+                                        <a href="/">
+                                            <img src="/img/logos/abb/logo-abb.png" alt="Atlantic Broadband" />
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col d-none d-lg-block">
+                                    <div class="masthead-bulk">
+                                        <div class="row align-items-lg-center justify-space-lg-between">
+                                            <div class="col-lg">
+                                                <div class="masthead-primary">
+                                                    <ul class="nav">
+                                                        <li class="nav-item mr-lg-4">
+                                                            <a class="nav-link" href="/">Build Your Bundle</a>
+                                                        </li>
+                                                        <li class="nav-item dropdown mr-lg-4">
+                                                            <a class="nav-link dropdown-toggle" href="#" id="nav-internet" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">Internet</a>
+                                                            <div class="dropdown-menu" aria-labelledby="nav-internet">
+                                                                <a class="dropdown-item" href="#">Action</a>
+                                                                <a class="dropdown-item" href="#">Another action</a>
+                                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                            </div>
+
+
+                                                        </li>
+                                                        <li class="nav-item mr-lg-4">
+                                                            <a class="nav-link" href="/offers">Video</a>
+                                                        </li>
+                                                        <li class="nav-item dropdown mr-lg-4">
+                                                            <a class="nav-link dropdown-toggle" href="#" id="resi" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">Phone</a>
+                                                            <div class="dropdown-menu" aria-labelledby="resi">
+                                                                <a class="dropdown-item" href="#">Action</a>
+                                                                <a class="dropdown-item" href="#">Another action</a>
+                                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-auto">
+                                                <div class="masthead-secondary">
+                                                    <ul class="nav">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link pr-lg-4" href="#"><i class="fas fa-shopping-cart masthead-icon"></i><span class="sr-only">Go to shopping cart</span></a>
+                                                        </li>
+                                                        <li class="nav-item pipe">
+                                                            <a class="nav-link pl-lg-4" href="#"><i class="fas fa-search masthead-icon"></i><span class="sr-only">Search</span></a>
+                                                        </li>
+                                                    </ul>
+                                                    <form class="xd-flex d-none">
+                                                        <label for="masthead-search"><span class="sr-only">Search the Atlantic Broadband website</span></label>
+                                                        <input aria-label="Search" class="form-control rounded-0" id="masthead-search" placeholder="Search" type="search">
+                                                        <button class="btn btn-primary rounded-0" type="submit"><i class="fas fa-search" title="Submit Search"></i></button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-auto ml-auto d-lg-none">
+                                    <button class="masthead-toggle d-lg-none" id="nav-mobile-toggle">
+                                        <div class="masthead-toggle-pipe"></div>
+                                        <div class="masthead-toggle-pipe"></div>
+                                        <div class="masthead-toggle-pipe"></div>
+                                        <div class="masthead-toggle-copy"
+                                        data-toggle-close="Close"
+                                        data-toggle-open="Menu"
+                                        id="menu-title">
+                                            Menu
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="d-lg-none" id="nav-mobile">
+                                    <ul class="nav-fw-bolder">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/">Bundles & Deals</a>
+                                            <ul class="nav-fw-bolder">
+                                                <li><a href="">Internet + TV + Phone</a></li>
+                                                <li><a href="">Internet + TV</a></li>
+                                                <li><a href="">Internet + Phone</a></li>
+                                                <li><a href="">All Deals</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="">Internet</a>
+                                            <ul class="nav-fw-bolder">
+                                                <li><a href="">Services</a></li>
+                                                <li><a href="">Gigabit</a></li>
+                                                <li><a href="">Test Your Speed</a></li>
+                                                <li><a href="">WiFi Hotspots</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="">TV</a>
+                                            <ul class="nav-fw-bolder">
+                                                <li><a href="">Services</a></li>
+                                                <li><a href="">TiVo Experience</a></li>
+                                                <li><a href="">Channel Line Ups</a></li>
+                                                <li><a href="">TV Online</a></li>
+                                                <li><a href="">On Demand</a></li>
+                                                <li><a href="">Add On Channels</a></li>
+                                                <li><a href="">Prime Video</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="">Phone</a>
+                                            <ul class="nav-fw-bolder">
+                                                <li><a href="">Services</a></li>
+                                                <li><a href="">International Rates</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="">Support</a>
+                                            <ul class="nav-fw-bolder">
+                                                <li>
+                                                    <a href="">General Support</a>
+                                                    <ul class="nav-fw-bolder">
+                                                        <li><a href="">Account & Billing</a></li>
+                                                        <li><a href="">Contact Us</a></li>
+                                                        <li><a href="">Email</a></li>
+                                                        <li><a href="">Español</a></li>
+                                                        <li><a href="">Mobile Apps</a></li>
+                                                        <li><a href="">User Guides</a></li>
+                                                        <li><a href="">Outages & Storms</a></li>
+                                                        <li><a href="">Video How-To Guides</a></li>
+                                                        <li><a href="">Policies & Agreements</a></li>
+                                                        <li><a href="">Accessibility Features</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="">Internet</a>
+                                                    <ul class="nav-fw-bolder">
+                                                        <li><a href="">Internet</a></li>
+                                                        <li><a href="">Home WiFi</a></li>
+                                                        <li><a href="">WiFi Hotspots</a></li>
+                                                        <li><a href="">Modem Set Up</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="">TV</a>
+                                                    <ul class="nav-fw-bolder">
+                                                        <li><a href="">TV</a></li>
+                                                        <li><a href="">TiVo</a></li>
+                                                        <li><a href="">TV Online</a></li>
+                                                        <li><a href="">Netflix</a></li>
+                                                        <li><a href="">Remote Control</a></li>
+                                                        <li><a href="">Digital Channel Migration</a></li>
+                                                        <li><a href="">Mundo Latino</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="">Phone</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="">My Services</a>
+                                            <ul class="nav-fw-bolder">
+                                                <li>
+                                                    <a href="">My Account</a>
+                                                    <ul class="nav-fw-bolder">
+                                                        <li><a href="">Get Digital</a></li>
+                                                        <li><a href="">Mobile Apps</a></li>
+                                                        <li><a href="">Outages & Storms</a></li>
+                                                        <li><a href="">Pay + View + Manage Bill Online</a></li>
+                                                        <li><a href="">Seasonal Plan</a></li>
+                                                        <li><a href="">TiVo Voice Remote</a></li>
+                                                        <li><a href="">Why Atlantic Broadband</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="">Internet</a>
+                                                    <ul class="nav-fw-bolder">
+                                                        <li><a href="">Check My Email</a></li>
+                                                        <li><a href="">Reset Email Password</a></li>
+                                                        <li><a href="">Test Your Speed</a></li>
+                                                        <li><a href="">Troubleshoot Your Modem Online</a></li>
+                                                        <li><a href="">Modem Set Up</a></li>
+                                                        <li><a href="">WiFi Hotspots</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="">TV</a>
+                                                    <ul class="nav-fw-bolder">
+                                                        <li><a href="">View My Channel Lineup</a></li>
+                                                        <li><a href="">Request A Channel</a></li>
+                                                        <li><a href="">See Local TV Listings</a></li>
+                                                        <li><a href="">TiVo Experience</a></li>
+                                                        <li><a href="">Watch TV Online</a></li>
+                                                        <li><a href="">TV Online Apps</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="">Phone</a>
+                                                    <ul class="nav-fw-bolder">
+                                                        <li><a href="">Manage Voicemail</a></li>
+                                                        <li><a href="">Set Phone Featues</a></li>
+                                                        <li><a href="">View Call History</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <main id="main">
+                {{ block "main" . }} {{end}}
+
+                <div class="hero">
+                    <div class="container-xxl">
+                        <h1>
+                            High-Speed Internet &amp; Wifi For Streaming, Gaming & Sharing.
+                        </h1>
+                        <p>Reliably fast internet for your lifestyle. Get the speed & coverage you need.</p>
+                    </div>
+                </div>
+
+
+                <div class="layer bg-light py-8">
+                    <div class="container-lg">
+
+                        <div class="addy text-center mb-7">
+                            <h1 class="h2 text-capitalize mb-2">Internet Offers</h1>
+                            <p class="text-secondary font-weight-bolder mb-2">3 FARREY LN, MIAMI BEACH, FL, 33139</p>
+                            <div>
+                                <a href="" class="btn-link">Change Address</a>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-warning text-center">
+                            <div>
+                                <strong>An Important Note About Installation</strong>
+                            </div>
+                            In an effort to keep both your household and our team safe, we have launched a new self-install option for all internet only offers. A technician will deliver the equipment to your door and provide you detailed instructions on how to install your new service on your own.
+                        </div>
+                    </div>
+
+                    <div class="product-boxes mt-8">
+                        <div class="container-xxl">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="card mb-4 mb-lg-0">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Product One</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card mb-4 mb-lg-0">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Product Two</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card mb-4 mb-lg-0">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Product Three</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="layer bg-info text-white py-6">
+                    <div class="container-xxl">
+                        <div class="row justify-content-md-between align-items-md-center">
+                            <div class="col-lg-6 mb-4 mb-lg-0">
+                                <div class="h3 mb-2">
+                                    Are you getting the bandwidth you need?
+                                </div>
+                                <div>
+                                    Take our quick speed test to evaluate your current connection
+                                </div>
+                            </div>
+                            <div class="col-md-auto">
+                                <a href="" class="btn btn-secondary">Test Your Speed</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="layer py-8 marketing-copy">
+                    <div class="container-lg">
+                        <h1 class="text-center mb-7">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit
+                        </h1>
+                    </div>
+                    <div class="container-xxl">
+                        <div class="row align-items-lg-center">
+                            <div class="col-lg">
+                                <div class="mb-4 mb-lg-0">
+                                    <img src="https://picsum.photos/id/20/700/525" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-lg">
+                                <h2>
+                                    Hello world
+                                </h2>
+                                <p>
+                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                                </p>
+                                <ul>
+                                    <li>Malesuada magna mollis lorem dolar</li>
+                                    <li>Cut the cord with us and lorem</li>
+                                    <li>Fermentum massa justo sit amet risus</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 row flex-lg-row-reverse align-items-lg-center">
+                            <div class="col-lg">
+                                <div class="mb-4 mb-lg-0">
+                                    <img src="https://picsum.photos/id/1/700/525" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-lg">
+                                <h2>
+                                    Cut the cord today!
+                                </h2>
+                                <p>
+                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                                </p>
+                                <ul>
+                                    <li>Malesuada magna mollis lorem dolar</li>
+                                    <li>Cut the cord with us and lorem</li>
+                                    <li>Fermentum massa justo sit amet risus</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="layer bg-dark text-white py-8">
+                    <div class="container-xxl">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <h2>Pair TV With Our Reliable Internet</h2>
+                                <p class="mb-5">Add TV to our high-speed internet and get the power to stream apps like Prime Video and Netflix or watch live TV from any device in the house.</p>
+
+                                <div class="d-flex">
+                                    <div class="mx-2 my-2">
+                                        <img src="https://atlanticbb.com/sites/all/themes/progressive/progressive_sub/images/logo__usa_inverted.png" alt="">
+                                    </div>
+                                    <div class="mx-2 my-2">
+                                        <img src="https://atlanticbb.com/sites/all/themes/progressive/progressive_sub/images/logo__espn_inverted.png" alt="">
+                                    </div>
+                                    <div class="mx-2 my-2">
+                                        <img src="https://atlanticbb.com/sites/all/themes/progressive/progressive_sub/images/logo__hallmark_inverted.png" alt="">
+                                    </div>
+                                    <div class="mx-2 my-2">
+                                        <img src="https://atlanticbb.com/sites/all/themes/progressive/progressive_sub/images/logo__hgtv_inverted.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="d-flex">
+                                    <div class="mx-2 my-2">
+                                        <img src="https://atlanticbb.com/sites/all/themes/progressive/progressive_sub/images/logo__nick_inverted.png" alt="">
+                                    </div>
+                                    <div class="mx-2 my-2">
+                                        <img src="https://atlanticbb.com/sites/all/themes/progressive/progressive_sub/images/logo__tbs_inverted.png" alt="">
+                                    </div>
+                                    <div class="mx-2 my-2">
+                                        <img src="https://atlanticbb.com/sites/all/themes/progressive/progressive_sub/images/logo__id_inverted.png" alt="">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="layer marketing-copy">
+                    <div class="container-xxl">
+
+                    </div>
+                </div>
+
+
+
+
+
+            </main>
+
+
+
+
+
+
+
+            <footer class="footer-primary">
+                <div class="footer-primary-accent py-4 py-xl-6">
+                    <div class="container-xxl">
+                        <div class="footer-primary-accent-row row justify-content-xl-between">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="h4">
+                                    Col 1 Heading
+                                </div>
+
+                                <ul class="list-unstyled">
+                                    <li class="footer-primary-nav-item">
+                                        <a class="font-weight-bold text-reset" href="">Account</a>
+                                    </li>
+                                    <li class="footer-primary-nav-item">
+                                        <a class="footer-primary-nav-link" href="">Log In</a>
+                                    </li>
+                                    <li class="footer-primary-nav-item">
+                                        <a class="footer-primary-nav-link" href="">Pay My Bill</a>
+                                    </li>
+                                    <li class="footer-primary-nav-item">
+                                        <a class="footer-primary-nav-link" href="">Manage My Account</a>
+                                    </li>
+                                    <li class="footer-primary-nav-item">
+                                        <a class="footer-primary-nav-link" href="">Reset My Password</a>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled">
+                                    <li class="footer-primary-nav-item">
+                                        <a class="font-weight-bold text-reset" href="">Heading</a>
+                                    </li>
+                                    <li class="footer-primary-nav-item">
+                                        <a class="footer-primary-nav-link" href="">Lorem Ipsum Dolar</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="h4">
+                                    Col 2 Heading
+                                </div>
+
+                                <ul class="list-unstyled">
+                                    <li class="footer-primary-nav-item">
+                                        <a class="font-weight-bold text-reset" href="">Account</a>
+                                    </li>
+                                    <li class="footer-primary-nav-item">
+                                        <a class="footer-primary-nav-link" href="">Log In</a>
+                                    </li>
+                                    <li class="footer-primary-nav-item">
+                                        <a class="footer-primary-nav-link" href="">Pay My Bill</a>
+                                    </li>
+                                    <li class="footer-primary-nav-item">
+                                        <a class="footer-primary-nav-link" href="">Manage My Account</a>
+                                    </li>
+                                    <li class="footer-primary-nav-item">
+                                        <a class="footer-primary-nav-link" href="">Reset My Password</a>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled">
+                                    <li class="footer-primary-nav-item">
+                                        <a class="font-weight-bold text-reset" href="">Heading</a>
+                                    </li>
+                                    <li class="footer-primary-nav-item">
+                                        <a class="footer-primary-nav-link" href="">Lorem Ipsum Dolar</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="h4">
+                                    Col 3 Heading
+                                </div>
+
+                                <ul class="list-unstyled">
+                                    <li class="footer-primary-nav-item">
+                                        <a class="font-weight-bold text-reset" href="">Account</a>
+                                    </li>
+                                    <li class="footer-primary-nav-item">
+                                        <a class="footer-primary-nav-link" href="">Log In</a>
+                                    </li>
+                                    <li class="footer-primary-nav-item">
+                                        <a class="footer-primary-nav-link" href="">Pay My Bill</a>
+                                    </li>
+                                    <li class="footer-primary-nav-item">
+                                        <a class="footer-primary-nav-link" href="">Manage My Account</a>
+                                    </li>
+                                    <li class="footer-primary-nav-item">
+                                        <a class="footer-primary-nav-link" href="">Reset My Password</a>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled">
+                                    <li class="footer-primary-nav-item">
+                                        <a class="font-weight-bold text-reset" href="">Heading</a>
+                                    </li>
+                                    <li class="footer-primary-nav-item">
+                                        <a class="footer-primary-nav-link" href="">Lorem Ipsum Dolar</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="h4">
+                                    Col 4 Heading
+                                </div>
+                                <ul class="list-unstyled">
+                                    <li class="footer-primary-nav-item">
+                                        <a class="footer-primary-nav-link" href="">Leadership</a>
+                                    </li>
+                                    <li class="footer-primary-nav-item">
+                                        <a class="footer-primary-nav-link" href="">Malesuada Euismod</a>
+                                    </li>
+                                    <li class="footer-primary-nav-item">
+                                        <a class="footer-primary-nav-link" href="">Euismod</a>
+                                    </li>
+                                    <li class="footer-primary-nav-item">
+                                        <a class="footer-primary-nav-link" href="">Quam Sem</a>
+                                    </li>
+                                    <li class="footer-primary-nav-item">
+                                        <a class="footer-primary-nav-link" href="">Aeilismod</a>
+                                    </li>
+                                    <li class="footer-primary-nav-item">
+                                        <a class="footer-primary-nav-link" href="">Malesuada Euismod</a>
+                                    </li>
+                                    <li class="footer-primary-nav-item">
+                                        <a class="footer-primary-nav-link" href="">Euismod</a>
+                                    </li>
+                                    <li class="footer-primary-nav-item">
+                                        <a class="footer-primary-nav-link" href="">Quam Sem</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-primary-legal py-3">
+                    <div class="container-xxl">
+                        <div class="row align-items-center justify-content-md-between">
+                            <div class="col-12 col-md-auto mb-2 mb-md-0">
+                                <ul class="list-unstyled mb-0 d-md-flex">
+                                    <li class="footer-primary-nav-item mr-md-4">
+                                        <a href="" class="footer-primary-nav-link">&copy; Atlantic Broadband</a>
+                                    </li>
+                                    <li class="footer-primary-nav-item mr-md-4">
+                                        <a href="" class="footer-primary-nav-link">Primary Locations</a>
+                                    </li>
+                                    <li class="footer-primary-nav-item mr-md-4">
+                                        <a href="" class="footer-primary-nav-link">FCC Info</a>
+                                    </li>
+                                    <li class="footer-primary-nav-item mr-md-4">
+                                        <a href="" class="footer-primary-nav-link">Privacy</a>
+                                    </li>
+                                    <li class="footer-primary-nav-item mr-md-4">
+                                        <a href="" class="footer-primary-nav-link">Lorem Ipsum</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-12 col-md-auto">
+                                <div class="d-flex mx-n2 mx-md-0">
+                                    <a class="px-2 py-1" href="">
+                                        <i class="fab fa-twitter"></i>
+                                        <span class="sr-only">Atlantic Broadband on Twitter</span>
+                                    </a>
+                                    <a class="px-2 py-1" href="">
+                                        <i class="fab fa-facebook-f"></i>
+                                        <span class="sr-only">Atlantic Broadband on Facebook</span>
+                                    </a>
+                                    <a class="px-2 py-1" href="">
+                                        <i class="fab fa-instagram"></i>
+                                        <span class="sr-only">Atlantic Broadband on Instagram</span>
+                                    </a>
+                                    <a class="px-2 py-1" href="">
+                                        <i class="fab fa-linkedin-in"></i>
+                                        <span class="sr-only">Atlantic Broadband on YouTube</span>
+                                    </a>
+                                    <a class="px-2 py-1" href="">
+                                        <i class="fab fa-youtube"></i>
+                                        <span class="sr-only">Atlantic Broadband on YouTube</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+
+        {{ $script := .Site.Data.webpack.main }}
+        {{ with $script.js }}
+            <script src="{{ relURL . }}"></script>
+        {{ end }}
+    </body>
+
+</html>

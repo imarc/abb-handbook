@@ -8,18 +8,22 @@
     $colorTwo,
     $colorOne: transparent,
     $col-selector: 'col-',
+    $responsive: true,
     $row-selector: 'row'
 ) {
     $col-percent: $cols / $grid-columns;
     $col-width: $col-percent * $container-max;
 
-    // set backgrounds on at small screen
-    .#{$row-selector} > [class^='#{$col-selector}']:nth-child(1) {
-        background-image: linear-gradient(to bottom, $colorOne, $colorOne);
-    }
 
-    .#{$row-selector} > [class^='#{$col-selector}']:nth-child(2) {
-        background-image: linear-gradient(to bottom, $colorTwo, $colorTwo);
+    @if $responsive {
+        // set background colors at small screen
+        .#{$row-selector} > [class^='#{$col-selector}']:nth-child(1) {
+            background-image: linear-gradient(to bottom, $colorOne, $colorOne);
+        }
+
+        .#{$row-selector} > [class^='#{$col-selector}']:nth-child(2) {
+            background-image: linear-gradient(to bottom, $colorTwo, $colorTwo);
+        }
     }
 
     @include media-breakpoint-up(xl) {

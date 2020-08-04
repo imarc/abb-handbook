@@ -310,8 +310,8 @@ $container-max-widths: (
     sm: 540px,
     md: 720px,
     lg: 960px,
-    xl: 1140px,
-    xxl: 1320px
+    xl: 1156px,
+    xxl: 1344px
 );
 // scss-docs-end container-max-widths
 
@@ -326,14 +326,14 @@ $container-max: map-get($container-max-widths, xxl);
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns: 12 !default;
-$grid-gutter-width: 2.5rem;
+$grid-gutter-width: 4rem;
 $grid-row-columns: 6 !default;
 
 $gutters: $spacers !default;
 
 // Container padding
 
-$container-padding-x: 1.25rem;
+$container-padding-x: 2rem;
 
 
 // Components
@@ -389,7 +389,7 @@ $embed-responsive-aspect-ratios: (
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.
-$font-family-sans-serif: 'Open Sans', 'Helvetica Neue', sans-serif;
+$font-family-sans-serif: 'DM Sans', 'Helvetica Neue', sans-serif;
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace !default;
 $font-family-base: var(--bs-font-sans-serif) !default;
 $font-family-code: var(--bs-font-monospace) !default;
@@ -409,14 +409,14 @@ $rfs-breakpoint: map-get($grid-breakpoints, xl);
 $font-weight-lighter: lighter !default;
 $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
-$font-weight-bold: 600;
+$font-weight-bold: 500;
 $font-weight-bolder: 700;
-$font-weight-boldest: 800;
+// $font-weight-boldest: 800;
 
 
 $font-weight-base: $font-weight-normal !default;
 
-$line-height-base: 1.7;
+$line-height-base: 1.6;
 $line-height-sm: 1.25 !default;
 $line-height-lg: 2 !default;
 
@@ -430,7 +430,7 @@ $h6-font-size: $font-size-base !default;
 $headings-margin-bottom: $spacer;
 $headings-font-family: null !default;
 $headings-font-style: null !default;
-$headings-font-weight: 300;
+$headings-font-weight: 400;
 $headings-line-height: 1.15;
 $headings-color: null !default;
 

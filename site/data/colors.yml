@@ -1,0 +1,9 @@
+- name: blue
+  hsl: "hsl(209, 71%, 55%)"
+  hex: "#3b8fde"
+- name: coral
+  hsl: "hsl(8, 87%, 71%)"
+  hex: "#f58675"
+- name: green
+  hsl: "hsl(141, 72%, 62%)"
+  hex: "#58e489"

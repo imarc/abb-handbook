@@ -7,21 +7,18 @@
             </div>
             <div class="col-md hb-main">
                 <div class="hero">
-                    <div class="px-4 px-md-8">
+                    <div class="px-4 px-md-6">
                         <h1>
-                            {{.Title}}
+                            {{ .Title }}
                         </h1>
                         <p>
-                            {{.Params.subtitle}}
+                            {{ .Params.subtitle }}
                         </p>
                     </div>
                 </div>
-
-                <div class="content">
-                    <div class="px-4 px-md-8 py-5">
-                        <div>
-                            {{.Content}}
-                        </div>
+                <div class="px-4 px-md-6 py-5">
+                    <div class="hb-content">
+                        {{ .Content }}
                     </div>
                 </div>
             </div>

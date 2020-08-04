@@ -1,0 +1,21 @@
+- title: Creative
+  pages:
+    - title: Colors
+    - title: Sketch
+    - title: Logos
+    - title: Typography
+    - title: Iconography
+
+- title: Development
+  pages:
+    - title: HTML
+    - title: Grid
+    - title: Sass
+
+- title: Components
+  pages:
+    - title: Accordions
+    - title: Buttons
+    - title: Hero
+    - title: Nav
+    - title: Videobg

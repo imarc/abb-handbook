@@ -3,6 +3,7 @@ languageCode = "en-us"
 languageLang = "en"
 title = "ABB Handbook"
 pygmentsUseClasses = true
+enableInlineShortcodes = true
 
 [markup]
   [markup.goldmark]

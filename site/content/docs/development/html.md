@@ -14,7 +14,3 @@ Dev Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est no
     <p>Hello world</p>
 </div>
 {{< /highlight >}}
-
-<a href="/components/accordion">
-    Accordion <i class="fas fa-external-link-alt"></i>
-</a>

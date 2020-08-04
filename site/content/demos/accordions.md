@@ -1,5 +1,5 @@
 ---
-title: 'accordion'
+title: 'accordions'
 date: 2020-07-22
 draft: false
 layout: 'base-container'
@@ -59,4 +59,5 @@ component: true
         </div>
     </div>
 </div>
+
 
