@@ -2,6 +2,8 @@
 title: 'Buttons'
 description: 'This is my buttons description.'
 group: 'components'
+bootstrapLink: true
+bootstrapSection: 'components'
 toc: true
 demolink: false
 ---

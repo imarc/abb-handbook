@@ -1,7 +1,9 @@
 ---
-title: 'Cards'
-description: 'This is my cards description.'
+title: 'Card'
+description: 'This is my card description.'
 group: 'components'
+bootstrapLink: true
+bootstrapSection: 'components'
 toc: true
 demolink: false
 ---

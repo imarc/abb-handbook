@@ -2,7 +2,7 @@
 title: 'Hero'
 description: 'Heroes are dedicated layers that usually introduce a page. They often have a heading, copy and link button.'
 group: 'components'
-demolink: false
+demolink: true
 ---
 
 ## Examples 
@@ -42,7 +42,3 @@ demolink: false
         <a class="btn btn-primary" href="">Learn More</a>
     </div>
 </div>
-
-<a class="hb-demo-link btn btn-primary" href="/demos/hero">
-    Hero <i class="fas fa-external-link-alt"></i>
-</a>
