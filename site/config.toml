@@ -5,6 +5,9 @@ title = "ABB Handbook"
 pygmentsUseClasses = true
 enableInlineShortcodes = true
 
+[params.bootstrap]
+    docs = "https://v5.getbootstrap.com/docs/5.0"
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.extensions]

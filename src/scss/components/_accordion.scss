@@ -17,17 +17,18 @@
 
 // Variants
 
-.accordion-minimal {
-    @include accordion-variant($white, $accordion-border-width, 0, $gray-400);
-}
-
 .accordion-primary {
     @include accordion-variant($primary, $accordion-border-width, $accordion-border-radius);
 }
 
-.accordion-coral {
-    @include accordion-variant($coral, $accordion-border-width, $accordion-border-radius);
+.accordion-light {
+    @include accordion-variant($gray-200, $accordion-border-width, $accordion-border-radius);
 }
+
+.accordion-minimal {
+    @include accordion-variant($white, $accordion-border-width, 0, $gray-400);
+}
+
 
 
 // Sizing

@@ -5,9 +5,8 @@
 @mixin accordion-variant($background, $border-width, $border-radius, $border-color: transparent) {
     .accordion-trigger {
         background-color: $background;
-        border-bottom: $border-width solid $border-color;
+        border: $border-width solid shade-color($border-color, 2);
         border-radius: $border-radius;
-        border-top: $border-width solid $border-color;
         color: color-contrast($background);
         &:hover {
             background-color: tint-color($background, 2);
@@ -23,7 +22,7 @@
 
     }
     .accordion-body {
-        background-color: tint-color($background, 11);
+        background-color: tint-color($background, 10);
     }
 }
 

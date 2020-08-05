@@ -446,8 +446,8 @@ $display-font-weight: 300 !default;
 $display-line-height: $headings-line-height !default;
 // scss-docs-end display-headings
 
-$lead-font-size: $font-size-base * 1.25 !default;
-$lead-font-weight: 300 !default;
+$lead-font-size: $font-size-base * 1.5;
+$lead-font-weight: 400;
 
 $small-font-size: 0.875em !default;
 
@@ -1218,6 +1218,8 @@ $breadcrumb-divider-color: $gray-600 !default;
 $breadcrumb-active-color: $gray-600 !default;
 $breadcrumb-divider: quote('/') !default;
 $breadcrumb-border-radius: $border-radius !default;
+$breadcrumb-link-color: $link-color;
+$breadcrumb-link-dark-color: $color-contrast-light;
 
 // Carousel
 
@@ -1296,6 +1298,11 @@ $hero-padding-y: $layer-padding-y;
 $hero-padding-y-sm: $layer-padding-y;
 
 
+// Offer
+
+$offer-padding-x: 2rem;
+
+
 // Accordion
 
 $accordion-bg: $gray-400;
@@ -1309,6 +1316,8 @@ $accordion-padding-y-sm: 0.725rem;
 $accordion-padding-x-lg: 1.25rem;
 $accordion-padding-y-lg: 1.25rem;
 
+
 // Videobg
+
 $videobg-padding-y: $layer-padding-y;
 $videobg-padding-y-sm: $layer-padding-y;

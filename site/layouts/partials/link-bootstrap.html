@@ -1,0 +1,13 @@
+{{ if .Page.Params.bootstrapLink }}
+    {{ $bs := .Site.Params.bootstrap.docs }}
+    {{ $slug := lower .Page.Params.bootstrapSection }}
+    {{ $title := lower .Page.Params.Title }}
+
+    {{ $url := print $bs "/" $slug "/" $title }}
+
+    <div>
+        <a class="btn btn-light fz-sm" href="{{ $url }}">
+            {{ .Page.Title }}’s Bootstrap docs <i class="fas fa-external-link-alt"></i>
+        </a>
+    </div>
+{{ end }}

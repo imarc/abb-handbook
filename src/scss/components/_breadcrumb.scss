@@ -1,0 +1,21 @@
+/**
+ * Components > Breadcrumb
+ */
+
+.breadcrumb-link {
+    color: $breadcrumb-link-color;
+    &:hover,
+    &:focus {
+        color: shade-color($breadcrumb-link-color, 4);
+    }
+}
+
+.breadcrumb-dark {
+    .breadcrumb-link {
+        color: $breadcrumb-link-dark-color;
+        &:hover,
+        &:focus {
+            color: shade-color($breadcrumb-link-dark-color, 4);
+        }
+    }
+}

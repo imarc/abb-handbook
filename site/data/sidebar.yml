@@ -11,11 +11,14 @@
     - title: HTML
     - title: Grid
     - title: Sass
+    - title: Color
 
 - title: Components
   pages:
-    - title: Accordions
+    - title: Accordion
+    - title: Breadcrumb
     - title: Buttons
+    - title: Cards
     - title: Hero
-    - title: Nav
+    - title: Offer
     - title: Videobg

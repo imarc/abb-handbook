@@ -22,12 +22,32 @@
 
 .hb-content {
     > h2:not(:first-child) {
-        margin-top: 3rem;
+        margin-top: 2.5rem;
     }
 
     > h3 {
-        margin-top: 2rem;
+        margin-top: 1.75rem;
     }
+}
+
+.hb-lead {
+    color: $gray-700;
+    max-width: 800px;
+    position: relative;
+    &::before {
+        background-color: $gray-300;
+        bottom: 0;
+        content: '';
+        display: block;
+        height: 1px;
+        left: 0;
+        position: absolute;
+        width: 250px;
+    }
+}
+
+.hb-demo-link {
+    margin-top: 3rem;
 }
 
 .hb-footer {

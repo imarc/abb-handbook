@@ -1,0 +1,16 @@
+/**
+ * Abtracts > Mixins > Hero
+ */
+
+@mixin hero($padding-y: $hero-padding-y) {
+    @include padding-bottom($padding-y);
+    @include padding-top($padding-y);
+}
+
+
+@mixin hero-variant($background, $border-width: 6px) {
+    @include gradient-directional($background, shade-color($background, 2));
+    border-bottom: $border-width solid shade-color($background, 4);
+    color: color-contrast($background);
+}
+

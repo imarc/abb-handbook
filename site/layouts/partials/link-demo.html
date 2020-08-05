@@ -1,0 +1,7 @@
+{{ if .Page.Params.demoLink }}
+<div class="hb-demolink mt-8 pb-4 pt-2 border-top">
+    <a class="btn btn-link" href="/demos/{{ lower .Page.Title }}">
+        {{ .Page.Title }} demo page <i class="fas fa-external-link-alt"></i>
+    </a>
+</div>
+{{ end }}

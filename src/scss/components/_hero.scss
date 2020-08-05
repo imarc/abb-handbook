@@ -3,10 +3,48 @@
  */
 
 .hero {
-    @include padding-bottom($hero-padding-y);
-    @include padding-top($hero-padding-y);
-    background-color: $primary;
-    background-size: cover;
-    box-shadow: inset 0 -6px 0 0 $blue-700;
-    color: color-contrast($primary);
+    @include hero();
 }
+
+.hero-primary {
+    @include hero-variant($primary);
+}
+
+.hero-light {
+    @include hero-variant($gray-200);
+}
+
+.hero-my-modifier {
+    background-image: url(https://picsum.photos/id/153/1600/700);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: gold;
+    padding-bottom: 200px;
+    padding-top: 88px;
+}
+
+
+// @mixin gradient-y($start-color: $gray-700, $end-color: $gray-800, $start-percent: null, $end-percent: null) {
+// background-image: linear-gradient(to bottom, $start-color $start-percent, $end-color $end-percent);
+// }
+
+// @mixin gradient-directional($start-color: $gray-700, $end-color: $gray-800, $deg: 45deg) {
+// background-image: linear-gradient($deg, $start-color, $end-color);
+// }
+
+// @mixin gradient-x-three-colors($start-color: $blue, $mid-color: $purple, $color-stop: 50%, $end-color: $red) {
+// background-image: linear-gradient(to right, $start-color, $mid-color $color-stop, $end-color);
+// }
+
+// @mixin gradient-y-three-colors($start-color: $blue, $mid-color: $purple, $color-stop: 50%, $end-color: $red) {
+// background-image: linear-gradient($start-color, $mid-color $color-stop, $end-color);
+// }
+
+// @mixin gradient-radial($inner-color: $gray-700, $outer-color: $gray-800) {
+// background-image: radial-gradient(circle, $inner-color, $outer-color);
+// }
+
+// @mixin gradient-striped($color: rgba($white, .15), $angle: 45deg) {
+// background-image: linear-gradient($angle, $color 25%, transparent 25%, transparent 50%, $color 50%, $color 75%, transparent 75%, transparent);
+// }

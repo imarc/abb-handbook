@@ -6,16 +6,29 @@
                 {{ partial "sidebar" . }}
             </div>
             <div class="col-md hb-main">
-                <div class="hero py-4">
-                    <div class="px-4 px-md-6">
-                        <h1 class="m-0">
-                            {{ .Title }}
-                        </h1>
+                <div class="hero hero-primary py-3">
+                    <div class="px-5">
+                        <div class="row align-items-center">
+                            <div class="col-lg my-2">
+                                <h1 class="m-0">
+                                    {{ .Title }}
+                                </h1>
+                            </div>
+                            <div class="col-lg-auto my-2 ml-lg-auto">
+                                {{ partial "link-bootstrap" . }}
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="px-4 px-md-6 py-5">
+                <div class="px-5 px-md-6 py-5">
                     <div class="hb-content">
+                        <p class="hb-lead lead mb-5 pb-3">
+                            {{ .Description }}
+                        </p>
+
                         {{ .Content }}
+
+                        {{ partial "link-demo" . }}
                     </div>
                 </div>
             </div>

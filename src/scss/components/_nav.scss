@@ -3,11 +3,6 @@
  * Extends Bootstrap’s nav.scss
  */
 
-.nav-link {
-    // v4 @include transition($link-color-transition);
-    // color: $blue-200;
-}
-
 .nav-dark {
     .nav-link {
         color: $nav-dark-color;
