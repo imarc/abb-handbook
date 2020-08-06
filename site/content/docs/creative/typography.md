@@ -41,12 +41,30 @@ Headings use a _perfect fourth_ type scale.
     <li>Lorem ipsum dolar maat</li>
     <li>Aenean sit amet erat nunc</li>
 </ol>
-
-<ul class="list-inline">
-    <li class="list-inline-item">Lorem ipsum</li>
-    <li class="list-inline-item">Phasellus iaculis</li>
-    <li class="list-inline-item">Nulla volutpat</li>
+<div class="bg-warning">
+<ul class="fa-ul list list-icon-flush">
+    <li class="list-item">
+        <span class="fa-li">
+            <i class="fas fa-check fa-sm"></i>
+        </span>
+        High-speed modem
+    </li>
+    <li class="list-item">
+        <span class="fa-li">
+            <i class="fas fa-check fa-sm"></i>
+        </span>
+        Donec id el sit non mi porta gravida at eget metus
+    </li>
 </ul>
+</div>
+
+### Icon-based List
+
+<ul class="fa-ul">
+  <li><span class="fa-li"><i class="fas fa-check"></i></span>List icons can</li>
+</ul>
+
+
 
 ## Links
 

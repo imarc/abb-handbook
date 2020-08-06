@@ -1,3 +1,8 @@
+/**
+ * Abtracts > Mixins > Font Awesome
+ * WIP
+ */
+
 @mixin fa($character: '', $set: fas, $pos: before) {
     @extend .#{$set};
     &::#{$pos} {

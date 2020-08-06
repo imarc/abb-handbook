@@ -3,35 +3,39 @@
  */
 
 .offer {
-    .offer-body {
-        background-color: $white;
-        box-shadow: $box-shadow;
-        padding: $offer-padding-x;
-    }
+    box-shadow: $box-shadow;
 }
 
+.offer-body {
+    background-color: $white;
+}
 
+.offer-header {
+    padding: $offer-padding-y $offer-padding-x;
+}
 
+.offer-torso {
+    padding: map-get($spacers, 2) $offer-padding-x;
+}
 
-//     <div class="offer offer-accented">
-//         <div class="offer-body">
-//             <div class="offer-heading">Fast Internet</div>
-//             <div class="offer-copy">Streaming, gaming, sharing files, and more</div>
-//             <div class="offer-speed">
-//                 <div class="offer-speed display-4">
-//                     250
-//                 </div>
-//             </div>
-//             <div class="offer-rationale"></div>
-//             <div class="offer-icons"></div>
-//             <div class="offer-baz">
-//                 <div class="tooltip">
-//                     tip copy
-//                 </div>
-//              </div>
-//             <div class="disclaimer"></div>
-//             <div class="offer-cta">
-//                 <a class="btn btn-primary" href="">Order Now</a>
-//             </div>
-//         </div>
-//     </div>
+.offer-heading {
+    @include font-size(1.375rem);
+}
+
+.offer-subheading {
+    color: $blue-900;
+    font-weight: $font-weight-bold;
+}
+
+.offer-footer {
+    padding: $offer-padding-y $offer-padding-x;
+}
+
+.offer-icons {
+    margin-bottom: map-get($spacers, 4);
+}
+
+.offer-features {
+    margin-bottom: map-get($spacers, 4);
+}
+

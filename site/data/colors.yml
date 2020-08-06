@@ -1,5 +1,5 @@
 - name: blue
-  hsl: "hsl(209, 71%, 55%)"
+  hsl: "hsl(211, 100%, 49%)"
   hex: "#3b8fde"
 - name: coral
   hsl: "hsl(8, 87%, 71%)"
