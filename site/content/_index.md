@@ -11,3 +11,9 @@ and external. Resources span across multiple departments:
 - **Creative**: design templates, etc. Color swatches, logo files, Sketch templates, spacing instruction, more
 - **Development**: components list, methodologies
 - **Outside partners**: lorem ipsum
+
+<hr class="my-5">
+
+<h1 class="display-4 font-weight-bolder">Zenith</h1>
+
+{{< youtube TE3CKaeyHHg >}}
