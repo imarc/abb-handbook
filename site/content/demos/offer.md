@@ -6,9 +6,9 @@ component: true
 ---
 
 <div class="py-6">
-    <div class="row gx-5 gx-md-8 gy-6">
+    <div class="row align-items-lg-end gx-5 gx-md-8 gy-6">
         <div class="col-sm-6 col-lg-4 col-xl-3">
-            <div class="offer offer-accented">
+            <div class="offer">
                 <div class="offer-body">
                     <div class="offer-header">
                         <div class="offer-heading">Fast Internet</div>
@@ -89,7 +89,10 @@ component: true
             </div>
         </div>
         <div class="col-sm-6 col-lg-4 col-xl-3">
-            <div class="offer offer-accented">
+            <div class="offer">
+                <div class="offer-standout">
+                    Most Popular Internet Service
+                </div>
                 <div class="offer-body">
                     <div class="offer-header">
                         <div class="offer-heading">Fast Internet</div>
@@ -170,7 +173,7 @@ component: true
             </div>
         </div>
         <div class="col-sm-6 col-lg-4 col-xl-3">
-            <div class="offer offer-accented">
+            <div class="offer">
                 <div class="offer-body">
                     <div class="offer-header">
                         <div class="offer-heading">Fast Internet</div>
@@ -251,7 +254,7 @@ component: true
             </div>
         </div>
         <div class="col-sm-6 col-lg-4 col-xl-3">
-            <div class="offer offer-accented">
+            <div class="offer">
                 <div class="offer-body">
                     <div class="offer-header">
                         <div class="offer-heading">Fast Internet</div>

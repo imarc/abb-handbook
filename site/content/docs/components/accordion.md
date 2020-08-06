@@ -174,6 +174,7 @@ We supply some accordion-based mixins for finer control – `accordion-variant()
             </tr>
         </tbody>
     </table>
+</div>
 
 <div class="table-responsive">
     <table class="table caption-top">

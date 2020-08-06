@@ -3,11 +3,11 @@
  */
 
 .offer {
-    box-shadow: $box-shadow;
 }
 
 .offer-body {
     background-color: $white;
+    box-shadow: $box-shadow;
 }
 
 .offer-header {
@@ -15,7 +15,7 @@
 }
 
 .offer-torso {
-    padding: map-get($spacers, 2) $offer-padding-x;
+    padding: $offer-padding-y $offer-padding-x;
 }
 
 .offer-heading {
@@ -39,3 +39,11 @@
     margin-bottom: map-get($spacers, 4);
 }
 
+.offer-standout {
+    background-color: $offer-standout-bg;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    color: color-contrast($offer-standout-bg);
+    font-size: $font-size-sm;
+    text-align: center;
+}
