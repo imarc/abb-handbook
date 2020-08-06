@@ -14,10 +14,9 @@ There is no convention for modifiers or state-based classes, such as `block__ele
 
 We try to carry this over Bootstrap’s base-modifier approach as much as possible when creating our own components.
 
-<div class="bg-danger">
-    Put in example about hero or other component
-</div>
+### Component example
 
+{{< inprogress >}}
 
 ## Sass
 Aatlantic Broadband uses Sass.
@@ -29,8 +28,6 @@ We organize our Sass architecture in a way that is similar to a [5-1](https://ma
 The `main.scss` entry point file **should not be edited**.
 
 {{< highlight html>}}
-scss/                               # Import all ‘-dir.scss’ files
-|
 |- abstracts/                   
 |	|- __abstracts-dir.scss     # Import all abstracts .scss files
 |	|- *.scss                   # Lorem
@@ -59,10 +56,4 @@ scss/                               # Import all ‘-dir.scss’ files
 – main.scss                         # Main entrypoint (do not change)
 |
 – shame.scss                        # Code that you know is bad
-{{< /highlight >}}
-
-{{< highlight html>}}
-<div class="foo-baz">
-    <p>Hello world</p>
-</div>
 {{< /highlight >}}

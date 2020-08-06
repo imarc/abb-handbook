@@ -274,7 +274,6 @@
 
                 <div class="layer bg-light py-8">
                     <div class="container-lg">
-
                         <div class="addy text-center mb-7">
                             <h1 class="h2 text-capitalize mb-2">Internet Offers</h1>
                             <p class="text-secondary font-weight-bolder mb-2">3 FARREY LN, MIAMI BEACH, FL, 33139</p>
@@ -640,11 +639,11 @@
             </footer>
         </div>
 
-
         {{ $script := .Site.Data.webpack.main }}
         {{ with $script.js }}
             <script src="{{ relURL . }}"></script>
         {{ end }}
+
     </body>
 
 </html>

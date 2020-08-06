@@ -1,12 +1,16 @@
 ---
 title: 'Typography'
-description: 'This is my typo description.'
+description: 'Information regarding all things typography.'
 date: 2020-07-22
 group: 'creative'
 ---
 
+## Typeface
+
+Atlantic Broadband uses the **Lorem Ipsum** typeface. It is known for vehicula ut id elit. Duis mollis, est non commodo luctus eget lacinia odio sem nec elit.
+
 ## Headings
-Headings use a [_perfect fourth_](https://type-scale.com/?size=16&scale=1.333&text=A%20Visual%20Type%20Scale&font=DM%20Sans&fontweight=400&bodyfont=Poppins&bodyfontweight=400&lineheight=1.65&backgroundcolor=white&fontcolor=%23333&preview=false) type scale. 
+Headings use a [perfect fourth](https://type-scale.com/?size=16&scale=1.333&text=A%20Visual%20Type%20Scale&font=DM%20Sans&fontweight=400&bodyfont=Poppins&bodyfontweight=400&lineheight=1.65&backgroundcolor=white&fontcolor=%23333&preview=false) type scale. 
 
 <h1>A Visual Type Scale (h1)</h1>
 <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
@@ -36,16 +40,35 @@ Headings use a [_perfect fourth_](https://type-scale.com/?size=16&scale=1.333&te
 </ul>
 
 <ol>
-    <li>Nulla volutpat aliquam velit</li>
-    <li>Lorem ipsum dolar maat</li>
-    <li>Aenean sit amet erat nunc</li>
+<li>Nulla volutpat aliquam velit</li>
+<li>Lorem ipsum dolar maat</li>
+<li>Aenean sit amet erat nunc</li>
 </ol>
 
 ### Icon-based list
 
-<ul class="fa-ul">
-  <li><span class="fa-li"><i class="fas fa-check"></i></span>List icons can</li>
-</ul>
+
+<div class="bg-dark">
+    <h5>Heading</h5>
+    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+    <ul class="fa-ul">
+    <li><span class="fa-li"><i class="fas fa-tv"></i></span>This is a default icon list from Font Awesome</li>
+    <li><span class="fa-li"><i class="fas fa-envelope"></i></span>This is a default icon list from Font Awesome</li>
+    <li><span class="fa-li"><i class="fas fa-check"></i></span>This is a default icon list from Font Awesome</li>
+    <li><span class="fa-li"><i class="fas fa-search"></i></span>Another default icon list from FA</li>
+    <li><span class="fa-li"><i class="fas fa-shopping-cart"></i></span>A default icon list from Font Awesome</li>
+    <li><span class="fa-li"><i class="fas fa-tools"></i></span>Icon</li>
+    </ul>
+    <ul class="fa-ul list list-sm list-icon">
+        <li class="list-item">
+            <span class="fa-li list-icon-asset">
+                <i class="fas fa-check fa-sm"></i>
+            </span>
+            High-speed modem
+        </li>
+    </ul>
+
+</div>
 
 ## Links
 
@@ -225,4 +248,4 @@ Note that pixel values referenced below are the calculated size at the largest b
 
 ## Weights
 
-To be written.
+{{< inprogress >}}

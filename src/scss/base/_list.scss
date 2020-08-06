@@ -2,20 +2,10 @@
  * Base > List
  */
 
- .list-sm {
-    font-size: $font-size-sm;
- }
+ .list {
+    //
+}
 
 .list-item {
-    margin-bottom: $paragraph-margin-bottom / 4;
-}
-
-// Lists with icons – flush left to parent
-.list-icon {
-    margin-left: $fa-li-width;
-}
-
-.list-icon-asset {
-    color: $green;
-    text-align: left;
+    // margin-bottom: $paragraph-margin-bottom / 4;
 }

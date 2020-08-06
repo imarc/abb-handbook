@@ -4,11 +4,8 @@ description: 'This is my card description.'
 group: 'components'
 bootstrapLink: true
 bootstrapSection: 'components'
-toc: true
 demolink: false
 ---
-
-[Cards on Bootstrap](https://v5.getbootstrap.com/docs/5.0/components/card/)
 
 Cards ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio. Nisi erat porttitor ligula, eget lacinia odio.
 
