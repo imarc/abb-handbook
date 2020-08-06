@@ -6,7 +6,7 @@ component: true
 ---
 
 <div class="py-6">
-    <div class="row gx-5 gx-md-6-6 gy-6">
+    <div class="row gx-5 gx-md-8 gy-6">
         <div class="col-sm-6 col-lg-4 col-xl-3">
             <div class="offer offer-accented">
                 <div class="offer-body">
