@@ -1,0 +1,20 @@
+/**
+ * Components > Layer
+ */
+
+.layer {
+    @include layer();
+}
+
+.layer-primary {
+    @include layer-variant($primary);
+}
+
+.layer-light {
+    @include layer-variant($gray-200);
+}
+
+.layer-custom {
+    background-color: $yellow;
+    color: $indigo-700;
+}
