@@ -40,4 +40,4 @@ An example of a button that extends Bootstrap’s solid/outline buttons.
 
 <button type="button" class="btn btn-taco">Taco</button>
 
-{< inprogress >}}
+{{< inprogress >}}
