@@ -1,7 +1,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
     <meta name="robots" content="noindex">
     <title>{{ $.Site.Title }}</title>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
