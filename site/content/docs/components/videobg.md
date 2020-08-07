@@ -3,6 +3,7 @@ title: 'Videobg'
 description: 'Videobg auto-plays a video file in its background.'
 group: 'components'
 demolink: true
+toc: false
 ---
 
 ## Examples

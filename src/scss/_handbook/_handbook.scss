@@ -2,8 +2,8 @@
  * Atlantic Broadband
  * Author: imarc.com
  *
- * These styles are used on the Atlantic broadband Handbook site only
- * Handbook documents creative, development, and more.
+ * These styles are used on the Atlantic broadband Handbook site only.
+ * The ABB Handbook documents creative, development, and more.
  *
  */
 
@@ -11,7 +11,6 @@
 $sidebar-width: 220px;
 $footer-height: 3rem;
 
-@import 'base';
+@import 'general';
 @import 'colors';
 @import 'syntax';
-@import 'toc';

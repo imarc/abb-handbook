@@ -4,6 +4,7 @@ description: 'Offer is used for ”product boxes” – the products for sale.'
 group: 'components'
 toc: true
 demolink: true
+toc: false
 ---
 
 ## Examples

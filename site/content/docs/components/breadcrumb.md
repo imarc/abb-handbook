@@ -5,6 +5,7 @@ group: 'components'
 bootstrapLink: true
 bootstrapSection: 'components'
 demoLink: false
+toc: false
 ---
 
 Breadcrumb dividers can be modified via the `$breadcrumb-divider` variable in our Bootstrap variables file.

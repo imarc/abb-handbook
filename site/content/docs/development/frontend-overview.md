@@ -4,6 +4,7 @@ description: 'How user interface components are conceptualized and implemented.'
 date: 2020-07-22
 group: 'development'
 aliases: "/docs/development"
+toc: true
 ---
 
 ## Markup

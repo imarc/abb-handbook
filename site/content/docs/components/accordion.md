@@ -3,6 +3,7 @@ title: 'Accordion'
 description: 'Accordion’s heavily leverage Bootstrap’s collapse functionality. We include sizing and color modifiers.'
 group: 'components'
 demolink: false
+toc: true
 ---
 
 ## Examples 

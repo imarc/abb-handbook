@@ -1,3 +1,17 @@
+// Syntax highlighting
+.highlight {
+    background-color: $gray-100;
+    color: inherit;
+    margin-bottom: $paragraph-margin-bottom;
+    padding: 1rem;
+}
+
+.highlight pre {
+    background-color: transparent;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
 /* Background */ .chroma { background-color: #ffffff }
 /* Other */ .chroma .x {  }
 /* Error */ .chroma .err {  }

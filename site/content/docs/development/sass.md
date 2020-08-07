@@ -3,6 +3,7 @@ title: 'Sass'
 description: 'The pre-processer for CSS.'
 date: 2020-07-22
 group: 'development'
+toc: false
 ---
 
 {{< inprogress >}}

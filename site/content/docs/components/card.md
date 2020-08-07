@@ -5,6 +5,7 @@ group: 'components'
 bootstrapLink: true
 bootstrapSection: 'components'
 demolink: false
+toc: false
 ---
 
 ## Examples

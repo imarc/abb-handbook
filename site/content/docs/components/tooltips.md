@@ -4,8 +4,8 @@ description: 'Tooltips are triggered on hover.'
 group: 'components'
 bootstrapLink: true
 bootstrapSection: 'components'
-toc: true
 demolink: false
+toc: false
 ---
 
 {{< inprogress >}}

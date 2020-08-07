@@ -3,6 +3,7 @@ title: 'Color'
 description: 'There is great power beyond only color codes.'
 date: 2020-07-22
 group: 'development'
+toc: false
 ---
 
 Bootstrap provides multiple Sass-based color functions.

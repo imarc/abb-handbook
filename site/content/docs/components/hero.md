@@ -3,6 +3,7 @@ title: 'Hero'
 description: 'Heroes are dedicated layers that usually introduce a page. They often have a heading, copy and link button.'
 group: 'components'
 demolink: true
+toc: true
 ---
 
 ## Examples 

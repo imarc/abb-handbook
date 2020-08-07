@@ -6,26 +6,24 @@
                 {{ partial "sidebar" . }}
             </div>
             <div class="col-md hb-main">
-                <div class="hero hero-primary py-3">
-                    <div class="px-5">
-                        <div class="row align-items-center">
-                            <div class="col-lg my-2">
-                                <h1 class="m-0">
-                                    {{ .Title }}
-                                </h1>
-                            </div>
-
-                            {{ partial "link-bootstrap" . }}
-
+                <div class="hero hero-primary px-5 py-4">
+                    <div class="row align-items-center">
+                        <div class="col-lg my-2">
+                            <h1 class="m-0">
+                                {{ .Title }}
+                            </h1>
                         </div>
+
+                        {{ partial "link-bootstrap" . }}
+
                     </div>
                 </div>
                 <div class="px-5 px-md-6 py-5">
                     <div class="row g-0 flex-lg-row-reverse">
                         {{ if (eq .Page.Params.toc true) }}
                         <div class="d-none d-xl-block col-xl-3 pl-xl-5">
-                            <div class="hb-toc text-muted xmb-lg-5">
-                                <strong class="d-block h5 my-2 pb-2 border-bottom">On this page</strong>
+                            <div class="hb-toc">
+                                <strong class="d-block h5 py-2 border-bottom">On this page</strong>
                                 {{ .TableOfContents }}
                             </div>
                         </div>

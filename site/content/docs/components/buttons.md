@@ -6,6 +6,7 @@ bootstrapLink: true
 bootstrapSection: 'components'
 toc: true
 demolink: false
+toc: false
 ---
 
 ## Examples

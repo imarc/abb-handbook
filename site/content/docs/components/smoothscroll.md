@@ -3,6 +3,7 @@ title: 'Smooth Scroll'
 description: 'This is my smooth scroll description.'
 group: 'components'
 draft: true
+toc: false
 ---
 
 Smooth.

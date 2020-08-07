@@ -1,3 +1,13 @@
+/**
+ * Handbook
+ *
+ * Sidebar
+ * Main content
+ * Table of contents
+ */
+
+
+ // Sidebar
 .hb-logo {
     max-width: 150px;
 }
@@ -14,6 +24,13 @@
     }
 }
 
+.hb-link-active {
+    color: $gray-700;
+    font-weight: $font-weight-bolder;
+}
+
+
+// Main content
 .hb-main {
     @include media-breakpoint-up(md) {
         max-width: calc(100% - 220px);
@@ -51,32 +68,47 @@
     margin-top: 3rem;
 }
 
-.hb-footer {
-    background-color: $gray-800;
-    height: $footer-height;
-}
-
 .hb-example {
     border: 1px solid $gray-300;
     padding: 1rem;
 }
 
-.hb-link-active {
-    color: $gray-700;
-    font-weight: $font-weight-bolder;
+.hb-footer {
+    background-color: $gray-800;
+    height: $footer-height;
 }
 
 
-// Syntax highlighting
-.highlight {
-    background-color: $gray-100;
-    color: inherit;
-    margin-bottom: $paragraph-margin-bottom;
-    padding: 1rem;
-}
+// Table of Contents
+.hb-toc {
+    @include media-breakpoint-up(xl) {
+        position: sticky;
+        top: 2rem;
+        right: 0;
+        z-index: 2;
+        overflow-y: auto;
+    }
 
-.highlight pre {
-    background-color: transparent;
-    margin-bottom: 0;
-    margin-top: 0;
+    nav {
+        @include font-size(.875rem);
+
+        ul {
+            padding-left: 0;
+            list-style: none;
+
+        }
+
+        ul ul {
+            padding-left: 1rem;
+            margin-top: .25rem;
+        }
+
+        li {
+            margin-bottom: .25rem;
+        }
+
+        a {
+            color: $blue-400;
+        }
+    }
 }
