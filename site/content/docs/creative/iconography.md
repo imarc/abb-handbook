@@ -5,4 +5,4 @@ date: 2020-07-22
 group: 'development'
 ---
 
-{< inprogress >}}
+{{< inprogress >}}

@@ -1,14 +1,15 @@
 /**
  * Abstracts
  *
- * Abstracts are variables, functions, and mixins. Nothing here should output CSS.
+ * Abstracts are variables, functions, and mixins. Nothing here outputs CSS.
+ * The order of these files matter so please do not reorganize them.
  */
 
 
 // Bootstrap functions
 @import '~bootstrap/scss/functions';
 
-// Atlantic Broadband’s Bootstrap scss variable overrides
+// Atlantic Broadband’s Bootstrap variable overrides
 @import 'variables/bootstrap';
 @import 'utilities/bootstrap';
 
@@ -17,8 +18,9 @@
 @import '~bootstrap/scss/mixins';
 @import '~bootstrap/scss/utilities';
 
-// mmenu scss variable overrides
+// Vendor variable overrides
 @import 'variables/mmenu';
+@import 'variables/fontawesome';
 
 // Mixins
 @import 'mixins/accordion';

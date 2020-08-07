@@ -5,7 +5,7 @@ date: 2020-07-22
 group: 'development'
 ---
 
-{< inprogress >}}
+{{< inprogress >}}
 
 {{< example lang="css" show_preview="false">}}
 .nav-link.disabled {
