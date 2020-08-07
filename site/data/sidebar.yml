@@ -9,6 +9,7 @@
 - title: Development
   pages:
     - title: Frontend Overview
+    - title: Breakpoints
     - title: Grid
     - title: Iconography
     - title: Sass

@@ -11,6 +11,8 @@
 .#{$fa-css-prefix}-youtube:before { content: fa-content($fa-var-youtube); }
 
 // User Interface
+.#{$fa-css-prefix}-arrow-down:before { content: fa-content($fa-var-arrow-down); }
+.#{$fa-css-prefix}-arrow-up:before { content: fa-content($fa-var-arrow-up); }
 .#{$fa-css-prefix}-check:before { content: fa-content($fa-var-check); }
 .#{$fa-css-prefix}-chevron-up:before { content: fa-content($fa-var-chevron-up); }
 .#{$fa-css-prefix}-external-link-alt:before { content: fa-content($fa-var-external-link-alt); }
