@@ -7,7 +7,8 @@
  */
 
 
- // Sidebar
+// Sidebar
+
 .hb-logo {
     max-width: 150px;
 }
@@ -18,8 +19,8 @@
     @include media-breakpoint-up(md) {
         border-right: 1px solid darken(#f8f9fa, 10%);
         flex: 0 0 #{$sidebar-width};
-        max-width: #{$sidebar-width};
         height: calc(100vh - #{$footer-height});
+        max-width: #{$sidebar-width};
         position: sticky;
     }
 }
@@ -31,6 +32,7 @@
 
 
 // Main content
+
 .hb-main {
     @include media-breakpoint-up(md) {
         max-width: calc(100% - 220px);
@@ -42,7 +44,6 @@
     > h2:not(:first-child) {
         margin-top: 2.5rem;
     }
-
     > h3 {
         margin-top: 1.75rem;
     }
@@ -80,35 +81,32 @@
 
 
 // Table of Contents
+
 .hb-toc {
-    @include media-breakpoint-up(xl) {
-        position: sticky;
-        top: 2rem;
-        right: 0;
-        z-index: 2;
-        overflow-y: auto;
+    nav {
+        @include font-size(0.875rem);
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+
+    }
+    ul ul {
+        margin-top: 0.25rem;
+        padding-left: 1rem;
+    }
+    li {
+        margin-bottom: 0.25rem;
+    }
+    a {
+        color: $blue-400;
     }
 
-    nav {
-        @include font-size(.875rem);
-
-        ul {
-            padding-left: 0;
-            list-style: none;
-
-        }
-
-        ul ul {
-            padding-left: 1rem;
-            margin-top: .25rem;
-        }
-
-        li {
-            margin-bottom: .25rem;
-        }
-
-        a {
-            color: $blue-400;
-        }
+    @include media-breakpoint-up(xl) {
+        overflow-y: auto;
+        position: sticky;
+        right: 0;
+        top: 2rem;
+        z-index: 2;
     }
 }
