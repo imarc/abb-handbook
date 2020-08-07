@@ -21,6 +21,7 @@
 }
 
 .hb-content {
+    min-width: 0;
     > h2:not(:first-child) {
         margin-top: 2.5rem;
     }
@@ -79,5 +80,3 @@
     margin-bottom: 0;
     margin-top: 0;
 }
-
-

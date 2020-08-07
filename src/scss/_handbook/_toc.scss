@@ -1,0 +1,41 @@
+// stylelint-disable selector-max-type
+
+.hb-toc {
+    @include media-breakpoint-up(xl) {
+        position: sticky;
+        top: 1rem;
+        right: 0;
+        z-index: 2;
+        overflow-y: auto;
+    }
+
+    nav {
+        @include font-size(.875rem);
+
+        ul {
+            padding-left: 0;
+            list-style: none;
+
+            ul {
+                padding-left: 1rem;
+                margin-top: .25rem;
+            }
+        }
+
+        li {
+            margin-bottom: .25rem;
+        }
+
+        a {
+            color: inherit;
+
+            &:not(:hover) {
+                text-decoration: none;
+            }
+
+            code {
+                font: inherit;
+            }
+        }
+    }
+}

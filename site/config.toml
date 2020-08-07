@@ -26,6 +26,10 @@ enableInlineShortcodes = true
       hardWraps = false
       unsafe = true
       xhtml = false
+    [markup.tableOfContents]
+      endLevel = 3
+      ordered = false
+      startLevel = 2
   [markup.highlight]
     codeFences = true
     guessSyntax = false
