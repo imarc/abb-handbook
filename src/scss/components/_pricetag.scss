@@ -1,0 +1,11 @@
+/**
+ * Components > Pricetag
+ */
+
+.pricetag {
+    //background-color: purple;
+}
+
+.pricetag-figure {
+    @include text-crop($bottom-adjustment: 6px);
+}

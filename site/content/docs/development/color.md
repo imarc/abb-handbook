@@ -1,13 +1,13 @@
 ---
 title: 'Color'
-description: 'This is my color description.'
+description: 'There is great power beyond only color codes.'
 date: 2020-07-22
 group: 'development'
 ---
 
-Bootstrap provides some Sass-based color functions.
+Bootstrap provides multiple Sass-based color functions.
 
-# Color Contrast
+## Color Contrast
 
 `color-contrast()` returns light or dark colored text depending on its arguments. We can use `color-contrast()` in our components to output a color that satisfies WCAG’s color contrast ratio.
 

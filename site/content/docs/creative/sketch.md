@@ -1,9 +1,9 @@
 ---
 title: 'Sketch'
-description: 'This is my sketch description.'
+description: 'Sketch allows for fast ieration through a series of symbols and patterns.'
 date: 2020-07-22
 group: 'creative'
 ---
 
-Sketch Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio.
+{{< inprogress >}}
 

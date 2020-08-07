@@ -15,9 +15,4 @@ Font Awesome is included as an NPM package giving us access to all of Font Aweso
 
 In order to keep file bloat down, only icons we declare in our `_iconography.scss` file, are loaded into the CSS and thus the website. To add new icons, reference `_iconography.scss`.
 
-
-{{< highlight html>}}
-<div class="foo-baz">
-    <p>Hello world</p>
-</div>
-{{< /highlight >}}
+{< inprogress >}}

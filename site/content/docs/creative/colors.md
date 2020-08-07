@@ -1,20 +1,18 @@
 ---
 title: 'Colors'
-description: 'This is my color description.'
+description: 'Colors trickle down to the entire project.'
 date: 2020-07-22
 group: 'creative'
 aliases: "/docs/creative/"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio. Nisi erat porttitor ligula, eget lacinia odio.
-
 ## Theme colors
 
-<div class="row">
+<div class="row g-5">
     {{< theme-colors.inline >}}
     {{ range (index $.Site.Data "theme-colors") }}
     <div class="col-md-4">
-        <div class="p-3 bg-{{ .name }} {{ if or (eq .name "light") (eq .name "warning") }}text-dark{{ else if (eq .name "info")}}text-body{{ else }}text-white{{ end }}">
+        <div class="p-3 bg-{{ .name }} {{ if or (eq .name "light") (eq .name "warning") }}text-dark{{ else if or (eq .name "info") (eq .name "secondary") (eq .name "success")}}text-body{{ else }}text-white{{ end }}">
             {{ .name | title }}
         </div>
     </div>
@@ -25,9 +23,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non co
 
 ## All Colors
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio. Nisi erat porttitor ligula, eget lacinia odio.
-
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4 g-4">
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
     {{< theme-colors.inline >}}
     {{ range $color := $.Site.Data.colors }}
         {{ if (and (not (eq $color.name "white")) (not (eq $color.name "gray")) (not (eq $color.name "gray-dark"))) }}

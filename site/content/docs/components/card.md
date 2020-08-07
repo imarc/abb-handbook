@@ -1,13 +1,11 @@
 ---
 title: 'Card'
-description: 'This is my card description.'
+description: 'Trusty ole cards.'
 group: 'components'
 bootstrapLink: true
 bootstrapSection: 'components'
 demolink: false
 ---
-
-Cards ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio. Nisi erat porttitor ligula, eget lacinia odio.
 
 ## Examples
 
@@ -18,3 +16,5 @@ Cards ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non co
         <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
 </div>
+
+{< inprogress >}}
