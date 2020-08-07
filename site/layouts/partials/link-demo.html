@@ -1,6 +1,6 @@
 {{ if .Page.Params.demoLink }}
 <div class="hb-demolink mt-8 py-3 border-top">
-    <a href="/demos/{{ lower .Page.Title }}">
+    <a href="/demos/{{ lower .Page.Title | urlize}}">
         {{ .Page.Title }} demo page <i class="fas fa-external-link-alt"></i>
     </a>
 </div>
