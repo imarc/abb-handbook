@@ -99,4 +99,12 @@ Bootstrap’s grid is powered by flexbox, and we use it to its full extent.
     </tbody>
     </table>
 </div>
+
+## Examples
+
+- align bottom product boxes
+- generic grid with bg-colors
+- gutter mod examples
+- using grid for other things one might not expect
+
 {{< inprogress >}}
