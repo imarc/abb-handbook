@@ -8,12 +8,13 @@
 
 - title: Development
   pages:
-    - title: Frontend Overview
+    - title: Frontend overview
+    - title: Containers
     - title: Breakpoints
+    - title: Spacers system
     - title: Grid
     - title: Iconography
     - title: Sass
-    - title: Color
 
 - title: Components
   pages:
@@ -23,7 +24,7 @@
     - title: Card
     - title: Hero
     - title: Layer
-    - title: Mobile Nav
+    - title: Mobile nav
     - title: Offer
     - title: Popovers
     - title: Tooltips

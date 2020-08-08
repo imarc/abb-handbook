@@ -10,9 +10,9 @@ toc: true
 
 ## How it works
 
-Bootstrap’s grid is powered by flexbox, and we use it to its full extent.
+Bootstrap’s grid is powered by flexbox, and we use it to its full extent. You are required to use a [container](/docs/development/containers) element in conjunction with grid.
 
-## Our grid
+## Specifics
 
 <div class="table-responsive">
     <table class="table mb-4">
@@ -47,8 +47,8 @@ Bootstrap’s grid is powered by flexbox, and we use it to its full extent.
         </thead>
     <tbody>
         <tr class="text-decoration-line-through">
-            <th class="text-nowrap" scope="row">Container max-width</th>
-            <td>None (auto)</td>
+            <th class="text-nowrap" scope="row"><div><code class="font-weight-normal">.container</code></div> max-width</th>
+            <td>None</td>
             <td>540px</td>
             <td>720px</td>
             <td>960px</td>
@@ -59,8 +59,8 @@ Bootstrap’s grid is powered by flexbox, and we use it to its full extent.
             <td class="text-center" colspan="7"><div class="mb-2"><i class="fas fa-sm fa-arrow-up"></i> We don’t use Bootstrap’s max-width per-breakpoint containers (<code>.container</code>).</div> <div>We leverage the fluid-until-breakpoint containers (<code>.container-xxl</code>) <i class="fas fa-sm fa-arrow-down"></i></div></td>
         </tr>
         <tr>
-            <th class="text-nowrap" scope="row">Container-<code class="font-weight-normal">{breakpoint}</code> max-width</th>
-            <td>None (auto)</td>
+            <th class="text-nowrap" scope="row"><div><code class="font-weight-normal">.container-xxl</code></div> max-width</th>
+            <td>None</td>
             <td>100%</td>
             <td>100%</td>
             <td>100%</td>
@@ -102,9 +102,209 @@ Bootstrap’s grid is powered by flexbox, and we use it to its full extent.
 
 ## Examples
 
-- align bottom product boxes
-- generic grid with bg-colors
-- gutter mod examples
-- using grid for other things one might not expect
+You can really do most anything width the grid.
+
+### Basic grid
+
+This example uses a normal grid with our default 4rem `$grid-gutter-width`. This variable is set in our Bootstrap variables file. It is 2rem (32px) of padding on the left and right of every grid column. Grid rows automatically correct this with a negative left/right margin offset to ensure content remains aligned down a page. 
+
+<div class="px-5 mb-4">
+    <div class="row">
+        <div class="col-sm bg-light border py-2">
+            One of three columns
+        </div>
+        <div class="col-sm bg-light border py-2">
+            One of three columns
+        </div>
+        <div class="col-sm bg-light border py-2">
+            One of three columns
+        </div>
+    </div>
+</div>
+
+{{< highlight html>}}
+<div class="row">
+    <div class="col-sm">
+        One of three columns
+    </div>
+    <div class="col-sm">
+        One of three columns
+    </div>
+    <div class="col-sm">
+        One of three columns
+    </div>
+</div>
+{{< /highlight >}}
+
+### Use gutter modifiers based on our `$spacers` system
+
+Gutter modifiers allow you to change a grid’s column gutter width. Yo ucan also use vertical gutter width, which is very help to create space between stacked columns at a small screen.
+
+<div class="mb-4">
+    <div class="row gx-0 gy-4">
+        <div class="col-md bg-light border py-2">
+            One of two columns with no left/right gutter. But I do have a vertical gutter on small screen!
+        </div>
+        <div class="col-md bg-light border py-2">
+            Two of two columns with no left/right gutter. But I do have a vertical gutter on small screen!
+        </div>
+    </div>
+</div>
+
+### Align offer boxes to the bottom
+
+Using a `.align-items-{x}-end` aligns grid items to the bottom, allows us to use offer boxes with optional `.offer-standout` elements (Most popualr internet service) with ease. 
+
+<div class="row align-items-sm-end gy-6 mb-6">
+    <div class="col-sm-6">
+        <div class="offer">
+            <div class="offer-standout">
+                Most popular internet service
+            </div>
+            <div class="offer-body">
+                <div class="offer-header">
+                    <div class="offer-heading">Fast Internet</div>
+                    <div class="offer-subheading font-weight-bold">1000Mbps</div>
+                </div>
+                <div class="offer-torso">
+                    <div class="offer-icons">
+                        <div class="row align-items-center justify-content-start gx-3">
+                            <div class="col-auto">
+                                <div class="offer-icon">
+                                    <img class="rounded-circle" src="https://dummyimage.com/54x54/b3b3b3/ffffff.png&text=icon" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offer-features ml-n2">
+                        <ul class="fa-ul">
+                            <li>
+                                <span class="fa-li">
+                                    <i class="fas fa-check fa-sm"></i>
+                                </span>
+                                Basic service
+                            </li>
+                            <li>
+                                <span class="fa-li">
+                                    <i class="fas fa-check fa-sm"></i>
+                                </span>
+                                Great internet
+                            </li>
+                        </ul>    
+                    </div>
+                    <div class="offer-price">
+                        <div class="mb-3 fz-sm">
+                            <strong>6 month promotional price</strong>
+                        </div>
+                        <div class="pricetag">
+                            <div class="pricetag-body">
+                                <div class="pricetag-price d-flex align-items-end">
+                                    <div class="pricetag-figure display-4 font-weight-bold">
+                                        $59
+                                    </div>
+                                    <div class="pricetag-tooltip">
+                                        <a class="link-primary" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"><i class="fas fa-info-circle"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer-footer">
+                    <div class="mb-2">
+                        <a class="btn btn-primary btn-block" href="">Check Availability</a>
+                    </div>
+                    <div>
+                        <a class="btn btn-link btn-block" href="">More Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="offer">
+            <div class="offer-body">
+                <div class="offer-header">
+                    <div class="offer-heading">Fast Internet</div>
+                    <div class="offer-subheading font-weight-bold">1000Mbps</div>
+                </div>
+                <div class="offer-torso">
+                    <div class="offer-icons">
+                        <div class="row align-items-center justify-content-start gx-3">
+                            <div class="col-auto">
+                                <div class="offer-icon">
+                                    <img class="rounded-circle" src="https://dummyimage.com/54x54/b3b3b3/ffffff.png&text=icon" />
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="offer-icon">
+                                    <img class="rounded-circle" src="https://dummyimage.com/54x54/b3b3b3/ffffff.png&text=icon" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offer-features ml-n2">
+                        <ul class="fa-ul">
+                            <li>
+                                <span class="fa-li">
+                                    <i class="fas fa-check fa-sm"></i>
+                                </span>
+                                High-speed modem
+                            </li>
+                            <li>
+                                <span class="fa-li">
+                                    <i class="fas fa-check fa-sm"></i>
+                                </span>
+                                Advanced whole-home WiFi
+                            </li>
+                        </ul>    
+                    </div>
+                    <div class="offer-price">
+                        <div class="mb-3 fz-sm">
+                            <strong>6 month promotional price</strong>
+                        </div>
+                        <div class="pricetag">
+                            <div class="pricetag-body">
+                                <div class="pricetag-price d-flex align-items-end">
+                                    <div class="pricetag-figure display-4 font-weight-bold">
+                                        $99
+                                    </div>
+                                    <div class="pricetag-tooltip">
+                                        <a class="link-primary" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"><i class="fas fa-info-circle"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer-footer">
+                    <div class="mb-2">
+                        <a class="btn btn-primary btn-block" href="">Check Availability</a>
+                    </div>
+                    <div>
+                        <a class="btn btn-link btn-block" href="">More Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{< highlight html>}}
+<div class="row">
+    <div class="col-sm">
+        One of three columns
+    </div>
+    <div class="col-sm">
+        One of three columns
+    </div>
+    <div class="col-sm">
+        One of three columns
+    </div>
+</div>
+{{< /highlight >}}
+
+
+- Add example for using grid for other things one might not expect
 
 {{< inprogress >}}
