@@ -1,0 +1,20 @@
+/**
+* Abtracts > Mixins > Screen
+*/
+
+@mixin screen($color: $primary, $opacity: 0.15, $selector: 'screen') {
+    @at-root .#{$selector}-body {
+        position: relative;
+    }
+    &::before {
+        background-color: $color;
+        bottom: 0;
+        content: '';
+        display: block;
+        left: 0;
+        opacity: $opacity;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

@@ -1,0 +1,12 @@
+/**
+ * Components > Screen
+ */
+
+.screen {
+    @include screen($primary, 0.45);
+    position: relative;
+}
+
+.screen-my-modifier {
+    background-image: url('https://picsum.photos/id/153/1600/700');
+}

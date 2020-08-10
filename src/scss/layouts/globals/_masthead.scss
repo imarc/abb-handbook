@@ -1,6 +1,7 @@
 // Masthead
 
 .masthead {
+    position: relative;
     .nav-item {
         font-weight: $font-weight-bold;
     }
@@ -41,16 +42,6 @@
             background-color: $white;
             color: $blue-800;
         }
-    }
-}
-
-.masthead-body {
-    position: relative;
-}
-
-.masthead-secondary {
-    .nav-item {
-        font-size: $font-size-md;
     }
 }
 

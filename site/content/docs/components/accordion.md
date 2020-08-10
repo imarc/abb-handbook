@@ -2,7 +2,7 @@
 title: 'Accordion'
 description: 'Accordion’s heavily leverage Bootstrap’s collapse functionality. We include sizing and color modifiers.'
 group: 'components'
-demolink: false
+demolink: true
 toc: true
 ---
 
@@ -41,6 +41,30 @@ toc: true
         </div>
     </div>
 </div>
+{{< highlight html>}}
+<div class="accordion accordion-primary" id="accordionExample0">
+    <div class="accordion-item my-2">
+        <button class="btn accordion-trigger collapsed" id="heading0-1" type="button" data-toggle="collapse" data-target="#collapse0-1" aria-expanded="true" aria-controls="collapse0-1">
+            <div class="d-flex align-items-start">
+                <div class="accordion-heading flex-grow-1">
+                    Donec sed odio dui
+                </div>
+                <div class="accordion-icon ml-3">
+                    <i class="fas fa-chevron-up"></i>
+                </div>
+            </div>
+        </button>
+        <div id="collapse0-1" class="collapse" aria-labelledby="heading0-1" data-parent="#accordionExample0">
+            <div class="accordion-body">
+                <div class="accordion-heading h3">
+                    Commodo Fermentum Mollis Tellus Nullam
+                </div>
+                …
+            </div>
+        </div>
+    </div>
+</div>
+{{< /highlight >}}
 
 ### Light
 
@@ -76,6 +100,12 @@ toc: true
     </div>
 </div>
 
+{{< highlight html>}}
+<div class="accordion accordion-light" id="accordionExample1">
+    …
+</div>
+{{< /highlight >}}
+
 ### Minimal
 
 <div class="accordion accordion-minimal" id="accordionExample2">
@@ -110,40 +140,24 @@ toc: true
     </div>
 </div>
 
+{{< highlight html>}}
+<div class="accordion accordion-light" id="accordionExample2">
+    …
+</div>
+
+{{< /highlight >}}
+
 ### Sizes
 
 You can leverage different accordion sizes using `.accordion-lg` and `.accordion-sm` modifier classes.
 
-## Markup
-
 {{< highlight html>}}
-<div class="accordion accordion-primary" id="accordionExample0">
-    <div class="accordion-item my-2">
-        <button class="btn accordion-trigger collapsed" id="heading0-1" type="button" data-toggle="collapse" data-target="#collapse0-1" aria-expanded="true" aria-controls="collapse0-1">
-            <div class="d-flex align-items-start">
-                <div class="accordion-heading flex-grow-1">
-                    Donec sed odio dui
-                </div>
-                <div class="accordion-icon ml-3">
-                    <i class="fas fa-chevron-up"></i>
-                </div>
-            </div>
-        </button>
-        <div id="collapse0-1" class="collapse" aria-labelledby="heading0-1" data-parent="#accordionExample0">
-            <div class="accordion-body">
-                <div class="accordion-heading h3">
-                    Commodo Fermentum Mollis Tellus Nullam
-                </div>
-                …
-            </div>
-        </div>
-    </div>
+<div class="accordion accordion-primary accordion-lg" id="accordionExample3">
+    …
 </div>
 {{< /highlight >}}
 
-
-
-<h2 class="h4">Sass Mixins</h2>
+## Sass Mixins
 
 We supply some accordion-based mixins for finer control – `accordion-variant()` and `accordion-size()`.
 
