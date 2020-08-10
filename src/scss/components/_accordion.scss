@@ -2,6 +2,15 @@
  * Components > Accordion
  */
 
+.accordion {
+    @include accordion-size($accordion-padding-x, $accordion-padding-y, $font-size-base);
+}
+
+.accordion-item {
+    margin-bottom: map-get($spacers, 2);
+    margin-top: map-get($spacers, 2);
+}
+
 .accordion-trigger {
     text-align: left;
     width: 100%;
@@ -11,9 +20,19 @@
     transform: rotate(180deg);
 }
 
-.accordion {
-    @include accordion-size($accordion-padding-x, $accordion-padding-y, $font-size-base);
+.accordion-icon {
+    margin-left: map-get($spacers, 3);
 }
+
+.accordion-header {
+    align-items: flex-start;
+    display: flex;
+}
+
+.accordion-heading {
+    flex-grow: 1;
+}
+
 
 // Variants
 

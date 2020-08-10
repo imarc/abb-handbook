@@ -1,4 +1,6 @@
-// Masthead
+/**
+ * Layouts > Globals > Hero
+ */
 
 .masthead {
     position: relative;
@@ -24,26 +26,51 @@
 }
 
 .masthead-utility {
-    background-color: $blue-800;
-    .nav-item {
-        font-size: $font-size-xs;
-    }
-    .nav-pills {
-        .nav-link {
-            &:hover,
-            &:focus {
+    display: none;
+    @include media-breakpoint-up(lg) {
+        background-color: $blue-800;
+        display: block;
+        .nav-item {
+            font-size: $font-size-xs;
+        }
+        .nav-pills {
+            .nav-link:hover,
+            .nav-link:focus {
                 background-color: $blue-700;
             }
-        }
-        .nav-link.disabled {
-            color: $nav-dark-disabled-color;
-        }
-        .nav-link.active {
-            background-color: $white;
-            color: $blue-800;
+            .nav-link.disabled {
+                color: $nav-dark-disabled-color;
+            }
+            .nav-link.active {
+                background-color: $white;
+                color: $blue-800;
+            }
         }
     }
 }
+
+.masthead-brand {
+    max-width: 140px;
+    @include media-breakpoint-up(sm) {
+        max-width: 170px;
+    }
+}
+
+.masthead-body {
+    @include padding-bottom($masthead-body-padding-y);
+    @include padding-top($masthead-body-padding-y);
+}
+
+.masthead-secondary {
+    .nav-item {
+        @include text-crop();
+        font-size: 1.5rem;
+    }
+}
+
+.masthead-icon {
+}
+
 
 .masthead-toggle {
     background-color: transparent;
@@ -95,11 +122,4 @@
     letter-spacing: 0.05em;
     margin-top: 25px;
     text-transform: uppercase;
-}
-
-.masthead-brand {
-    max-width: 140px;
-    @include media-breakpoint-up(sm) {
-        max-width: 170px;
-    }
 }

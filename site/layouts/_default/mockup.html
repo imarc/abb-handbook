@@ -9,7 +9,7 @@
         <div id="app">
 
             <div class="masthead">
-                <div class="masthead-utility d-none d-lg-block">
+                <div class="masthead-utility">
                     <div class="container-xxl">
                         <div class="row justify-content-lg-between">
                             <div class="col">
@@ -39,246 +39,257 @@
                     </div>
                 </div>
 
-                <div class="py-3 pb-lg-0 pt-lg-4">
-                    <div class="masthead-body">
-                        <div class="container-xxl">
-                            <div class="row align-items-center">
-                                <div class="col-auto">
-                                    <div class="masthead-brand">
-                                        <a href="/">
-                                            <img src="/img/logos/abb/logo-abb.png" alt="Atlantic Broadband" />
-                                        </a>
-                                    </div>
+                <div class="masthead-body">
+                    <div class="container-xxl">
+                        <div class="row align-items-end">
+                            <div class="col-auto">
+                                <div class="masthead-brand">
+                                    <a href="/">
+                                        <img src="/img/logos/abb/logo-abb.png" alt="Atlantic Broadband" />
+                                    </a>
                                 </div>
-
-                                <div class="col-lg-auto d-none d-lg-block ml-lg-auto">
-                                    <div class="masthead-secondary">
-                                        <ul class="nav">
-                                            <li class="nav-item">
-                                                <a class="nav-link pr-lg-4" href="#"><i class="fas fa-shopping-cart masthead-icon"></i><span class="sr-only">Go to shopping cart</span></a>
-                                            </li>
-                                            <li class="nav-item pipe">
-                                                <a class="nav-link pl-lg-4" href="#"><i class="fas fa-search masthead-icon"></i><span class="sr-only">Search</span></a>
-                                            </li>
-                                        </ul>
-                                        <form class="xd-flex d-none">
-                                            <label for="masthead-search"><span class="sr-only">Search the Atlantic Broadband website</span></label>
-                                            <input aria-label="Search" class="form-control rounded-0" id="masthead-search" placeholder="Search" type="search">
-                                            <button class="btn btn-primary rounded-0" type="submit"><i class="fas fa-search" title="Submit Search"></i></button>
-                                        </form>
-                                    </div>
-                                </div>
-
-                                <div class="col-auto ml-auto d-lg-none">
-                                    <button class="masthead-toggle d-lg-none" id="nav-mobile-toggle">
-                                        <div class="masthead-toggle-pipe"></div>
-                                        <div class="masthead-toggle-pipe"></div>
-                                        <div class="masthead-toggle-pipe"></div>
-                                        <div class="masthead-toggle-copy"
-                                        data-toggle-close="Close"
-                                        data-toggle-open="Menu"
-                                        id="menu-title">
-                                        Menu
-                                    </div>
-                                </button>
                             </div>
-                            <div class="row">
-                                <div class="col-lg d-none d-lg-block">
-                                    <div class="masthead-primary">
-                                        <ul class="nav ml-lg-n3 mt-lg-3">
-                                            <li class="nav-item dropdown mr-lg-3">
-                                                <a class="nav-link dropdown-toggle" href="#" id="nav-internet" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">Shopx</a>
-                                                <div class="dropdown-menu" aria-labelledby="nav-internet">
-                                                    <a class="dropdown-item" href="#">Action</a>
-                                                    <a class="dropdown-item" href="#">Another action</a>
-                                                    <a class="dropdown-item" href="#">Something else here</a>
-                                                </div>
-                                            </li>
-                                            <li class="nav-item dropdown mr-lg-3">
-                                                <a class="nav-link dropdown-toggle" href="#" id="nav-internet" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">Internet</a>
-                                                <div class="dropdown-menu" aria-labelledby="nav-internet">
-                                                    <a class="dropdown-item" href="#">Action</a>
-                                                    <a class="dropdown-item" href="#">Another action</a>
-                                                    <a class="dropdown-item" href="#">Something else here</a>
-                                                </div>
-                                            </li>
 
-                                            <li class="nav-item dropdown mr-lg-3">
-                                                <a class="nav-link dropdown-toggle" href="#" id="phone" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">Video</a>
-                                                <div class="dropdown-menu" aria-labelledby="phone">
-                                                    <a class="dropdown-item" href="#">Action</a>
-                                                    <a class="dropdown-item" href="#">Another action</a>
-                                                    <a class="dropdown-item" href="#">Something else here</a>
-                                                </div>
-                                            </li>
-                                            <li class="nav-item dropdown mr-lg-3">
-                                                <a class="nav-link dropdown-toggle" href="#" id="phone" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">Phone</a>
-                                                <div class="dropdown-menu" aria-labelledby="phone">
-                                                    <a class="dropdown-item" href="#">Action</a>
-                                                    <a class="dropdown-item" href="#">Another action</a>
-                                                    <a class="dropdown-item" href="#">Something else here</a>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
+                            <div class="col-lg-auto d-none d-lg-block ml-lg-auto">
+                                <div class="masthead-secondary">
+                                    <ul class="nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <i class="fas fa-search masthead-icon" data-toggle="tooltip" data-placement="bottom" title="Search"></i><span class="sr-only">Search</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <i class="fas fa-shopping-cart masthead-icon" data-toggle="tooltip" data-placement="bottom" title="Shopping cart"></i><span class="sr-only">Go to shopping cart</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <i class="fas fa-tv masthead-icon" data-toggle="tooltip" data-placement="bottom" title="Change me"></i><span class="sr-only">Change me</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <form class="xd-flex d-none">
+                                        <label for="masthead-search"><span class="sr-only">Search the Atlantic Broadband website</span></label>
+                                        <input aria-label="Search" class="form-control rounded-0" id="masthead-search" placeholder="Search" type="search">
+                                        <button class="btn btn-primary rounded-0" type="submit"><i class="fas fa-search" title="Submit Search"></i></button>
+                                    </form>
                                 </div>
+                            </div>
+
+                            <div class="col-auto ml-auto d-lg-none">
+                                <button class="masthead-toggle" id="nav-mobile-toggle">
+                                    <div class="masthead-toggle-pipe"></div>
+                                    <div class="masthead-toggle-pipe"></div>
+                                    <div class="masthead-toggle-pipe"></div>
+                                    <div class="masthead-toggle-copy"
+                                    data-toggle-close="Close"
+                                    data-toggle-open="Menu"
+                                    id="menu-title">
+                                    Menu
+                                </button>
                             </div>
                         </div>
 
-                        <div>
-                            <div class="d-lg-none" id="nav-mobile">
-                                <ul class="nav-fw-bolder">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/">Bundles & Deals</a>
-                                        <ul class="nav-fw-bolder">
-                                            <li><a href="">Internet + TV + Phone</a></li>
-                                            <li><a href="">Internet + TV</a></li>
-                                            <li><a href="">Internet + Phone</a></li>
-                                            <li><a href="">All Deals</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="">Internet</a>
-                                        <ul class="nav-fw-bolder">
-                                            <li><a href="">Services</a></li>
-                                            <li><a href="">Gigabit</a></li>
-                                            <li><a href="">Test Your Speed</a></li>
-                                            <li><a href="">WiFi Hotspots</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="">TV</a>
-                                        <ul class="nav-fw-bolder">
-                                            <li><a href="">Services</a></li>
-                                            <li><a href="">TiVo Experience</a></li>
-                                            <li><a href="">Channel Line Ups</a></li>
-                                            <li><a href="">TV Online</a></li>
-                                            <li><a href="">On Demand</a></li>
-                                            <li><a href="">Add On Channels</a></li>
-                                            <li><a href="">Prime Video</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="">Phone</a>
-                                        <ul class="nav-fw-bolder">
-                                            <li><a href="">Services</a></li>
-                                            <li><a href="">International Rates</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="">Support</a>
-                                        <ul class="nav-fw-bolder">
-                                            <li>
-                                                <a href="">General Support</a>
-                                                <ul class="nav-fw-bolder">
-                                                    <li><a href="">Account & Billing</a></li>
-                                                    <li><a href="">Contact Us</a></li>
-                                                    <li><a href="">Email</a></li>
-                                                    <li><a href="">Español</a></li>
-                                                    <li><a href="">Mobile Apps</a></li>
-                                                    <li><a href="">User Guides</a></li>
-                                                    <li><a href="">Outages & Storms</a></li>
-                                                    <li><a href="">Video How-To Guides</a></li>
-                                                    <li><a href="">Policies & Agreements</a></li>
-                                                    <li><a href="">Accessibility Features</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="">Internet</a>
-                                                <ul class="nav-fw-bolder">
-                                                    <li><a href="">Internet</a></li>
-                                                    <li><a href="">Home WiFi</a></li>
-                                                    <li><a href="">WiFi Hotspots</a></li>
-                                                    <li><a href="">Modem Set Up</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="">TV</a>
-                                                <ul class="nav-fw-bolder">
-                                                    <li><a href="">TV</a></li>
-                                                    <li><a href="">TiVo</a></li>
-                                                    <li><a href="">TV Online</a></li>
-                                                    <li><a href="">Netflix</a></li>
-                                                    <li><a href="">Remote Control</a></li>
-                                                    <li><a href="">Digital Channel Migration</a></li>
-                                                    <li><a href="">Mundo Latino</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="">Phone</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="">My Services</a>
-                                        <ul class="nav-fw-bolder">
-                                            <li>
-                                                <a href="">My Account</a>
-                                                <ul class="nav-fw-bolder">
-                                                    <li><a href="">Get Digital</a></li>
-                                                    <li><a href="">Mobile Apps</a></li>
-                                                    <li><a href="">Outages & Storms</a></li>
-                                                    <li><a href="">Pay + View + Manage Bill Online</a></li>
-                                                    <li><a href="">Seasonal Plan</a></li>
-                                                    <li><a href="">TiVo Voice Remote</a></li>
-                                                    <li><a href="">Why Atlantic Broadband</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="">Internet</a>
-                                                <ul class="nav-fw-bolder">
-                                                    <li><a href="">Check My Email</a></li>
-                                                    <li><a href="">Reset Email Password</a></li>
-                                                    <li><a href="">Test Your Speed</a></li>
-                                                    <li><a href="">Troubleshoot Your Modem Online</a></li>
-                                                    <li><a href="">Modem Set Up</a></li>
-                                                    <li><a href="">WiFi Hotspots</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="">TV</a>
-                                                <ul class="nav-fw-bolder">
-                                                    <li><a href="">View My Channel Lineup</a></li>
-                                                    <li><a href="">Request A Channel</a></li>
-                                                    <li><a href="">See Local TV Listings</a></li>
-                                                    <li><a href="">TiVo Experience</a></li>
-                                                    <li><a href="">Watch TV Online</a></li>
-                                                    <li><a href="">TV Online Apps</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="">Phone</a>
-                                                <ul class="nav-fw-bolder">
-                                                    <li><a href="">Manage Voicemail</a></li>
-                                                    <li><a href="">Set Phone Featues</a></li>
-                                                    <li><a href="">View Call History</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
+                        <div class="row">
+                            <div class="col-lg d-none d-lg-block">
+                                <div class="masthead-primary">
+                                    <ul class="nav ml-lg-n3 mt-lg-3">
+                                        <li class="nav-item dropdown mr-lg-3">
+                                            <a class="nav-link dropdown-toggle" href="#" id="nav-internet" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">Shop</a>
+                                            <div class="dropdown-menu" aria-labelledby="nav-internet">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown mr-lg-3">
+                                            <a class="nav-link dropdown-toggle" href="#" id="nav-internet" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">Internet</a>
+                                            <div class="dropdown-menu" aria-labelledby="nav-internet">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item dropdown mr-lg-3">
+                                            <a class="nav-link dropdown-toggle" href="#" id="phone" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">Video</a>
+                                            <div class="dropdown-menu" aria-labelledby="phone">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown mr-lg-3">
+                                            <a class="nav-link dropdown-toggle" href="#" id="phone" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">Phone</a>
+                                            <div class="dropdown-menu" aria-labelledby="phone">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <div>
+                        <div class="d-lg-none" id="nav-mobile">
+                            <ul class="nav-fw-bolder">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/">Bundles & Deals</a>
+                                    <ul class="nav-fw-bolder">
+                                        <li><a href="">Internet + TV + Phone</a></li>
+                                        <li><a href="">Internet + TV</a></li>
+                                        <li><a href="">Internet + Phone</a></li>
+                                        <li><a href="">All Deals</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Internet</a>
+                                    <ul class="nav-fw-bolder">
+                                        <li><a href="">Services</a></li>
+                                        <li><a href="">Gigabit</a></li>
+                                        <li><a href="">Test Your Speed</a></li>
+                                        <li><a href="">WiFi Hotspots</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">TV</a>
+                                    <ul class="nav-fw-bolder">
+                                        <li><a href="">Services</a></li>
+                                        <li><a href="">TiVo Experience</a></li>
+                                        <li><a href="">Channel Line Ups</a></li>
+                                        <li><a href="">TV Online</a></li>
+                                        <li><a href="">On Demand</a></li>
+                                        <li><a href="">Add On Channels</a></li>
+                                        <li><a href="">Prime Video</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Phone</a>
+                                    <ul class="nav-fw-bolder">
+                                        <li><a href="">Services</a></li>
+                                        <li><a href="">International Rates</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Support</a>
+                                    <ul class="nav-fw-bolder">
+                                        <li>
+                                            <a href="">General Support</a>
+                                            <ul class="nav-fw-bolder">
+                                                <li><a href="">Account & Billing</a></li>
+                                                <li><a href="">Contact Us</a></li>
+                                                <li><a href="">Email</a></li>
+                                                <li><a href="">Español</a></li>
+                                                <li><a href="">Mobile Apps</a></li>
+                                                <li><a href="">User Guides</a></li>
+                                                <li><a href="">Outages & Storms</a></li>
+                                                <li><a href="">Video How-To Guides</a></li>
+                                                <li><a href="">Policies & Agreements</a></li>
+                                                <li><a href="">Accessibility Features</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">Internet</a>
+                                            <ul class="nav-fw-bolder">
+                                                <li><a href="">Internet</a></li>
+                                                <li><a href="">Home WiFi</a></li>
+                                                <li><a href="">WiFi Hotspots</a></li>
+                                                <li><a href="">Modem Set Up</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">TV</a>
+                                            <ul class="nav-fw-bolder">
+                                                <li><a href="">TV</a></li>
+                                                <li><a href="">TiVo</a></li>
+                                                <li><a href="">TV Online</a></li>
+                                                <li><a href="">Netflix</a></li>
+                                                <li><a href="">Remote Control</a></li>
+                                                <li><a href="">Digital Channel Migration</a></li>
+                                                <li><a href="">Mundo Latino</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">Phone</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">My Services</a>
+                                    <ul class="nav-fw-bolder">
+                                        <li>
+                                            <a href="">My Account</a>
+                                            <ul class="nav-fw-bolder">
+                                                <li><a href="">Get Digital</a></li>
+                                                <li><a href="">Mobile Apps</a></li>
+                                                <li><a href="">Outages & Storms</a></li>
+                                                <li><a href="">Pay + View + Manage Bill Online</a></li>
+                                                <li><a href="">Seasonal Plan</a></li>
+                                                <li><a href="">TiVo Voice Remote</a></li>
+                                                <li><a href="">Why Atlantic Broadband</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">Internet</a>
+                                            <ul class="nav-fw-bolder">
+                                                <li><a href="">Check My Email</a></li>
+                                                <li><a href="">Reset Email Password</a></li>
+                                                <li><a href="">Test Your Speed</a></li>
+                                                <li><a href="">Troubleshoot Your Modem Online</a></li>
+                                                <li><a href="">Modem Set Up</a></li>
+                                                <li><a href="">WiFi Hotspots</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">TV</a>
+                                            <ul class="nav-fw-bolder">
+                                                <li><a href="">View My Channel Lineup</a></li>
+                                                <li><a href="">Request A Channel</a></li>
+                                                <li><a href="">See Local TV Listings</a></li>
+                                                <li><a href="">TiVo Experience</a></li>
+                                                <li><a href="">Watch TV Online</a></li>
+                                                <li><a href="">TV Online Apps</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">Phone</a>
+                                            <ul class="nav-fw-bolder">
+                                                <li><a href="">Manage Voicemail</a></li>
+                                                <li><a href="">Set Phone Featues</a></li>
+                                                <li><a href="">View Call History</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+
             </div>
-
-
 
             <main id="main">
                 {{ block "main" . }} {{end}}
 
                 <div class="hero hero-primary">
                     <div class="container-xxl">
-                        <h1>
-                            High-Speed Internet &amp; Wifi For Streaming, Gaming & Sharing.
-                        </h1>
-                        <p>Reliably fast internet for your lifestyle. Get the speed & coverage you need.</p>
+                        <div class="row">
+                            <div class="col-xl-9">
+                                <h1>
+                                    High-Speed Internet &amp; Wifi For Streaming, Gaming & Sharing.
+                                </h1>
+                                <p>Reliably fast internet for your lifestyle. Get the speed & coverage you need.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
 
-                <div class="layer bg-light py-8">
-                    <div class="container-lg">
-                        <div class="addy text-center mb-7">
+                <div class="layer bg-light">
+                    <div class="container-xl">
+                        <div class="addy text-center mb-6">
                             <h1 class="h2 text-capitalize mb-2">Internet Offers</h1>
                             <p class="text-secondary font-weight-bolder mb-2">3 FARREY LN, MIAMI BEACH, FL, 33139</p>
                             <div>
@@ -286,7 +297,7 @@
                             </div>
                         </div>
 
-                        <div class="alert alert-warning text-center">
+                        <div class="alert alert-warning text-center mb-6">
                             <div>
                                 <strong>An Important Note About Installation</strong>
                             </div>
@@ -294,43 +305,377 @@
                         </div>
                     </div>
 
-                    <div class="product-boxes mt-8">
-                        <div class="container-xxl">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <div class="card mb-4 mb-lg-0">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Product One</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+
+                    <div class="container-xxl">
+                        <div class="row align-items-lg-end gx-5 gx-lg-6 gy-6">
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="offer">
+                                    <div class="offer-body">
+                                        <div class="offer-header">
+                                            <div class="offer-heading">Fast Internet</div>
+                                            <div class="offer-subheading font-weight-bold">1000Mbps</div>
+                                        </div>
+                                        <div class="offer-torso">
+                                            <div class="offer-icons">
+                                                <div class="row align-items-center justify-content-start gx-3">
+                                                    <div class="col-auto">
+                                                        <div class="offer-icon">
+                                                            <img class="rounded-circle" src="https://dummyimage.com/54x54/b3b3b3/ffffff.png&text=icon" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="offer-icon">
+                                                            <img class="rounded-circle" src="https://dummyimage.com/54x54/b3b3b3/ffffff.png&text=icon" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="offer-icon">
+                                                            <img class="rounded-circle" src="https://dummyimage.com/54x54/b3b3b3/ffffff.png&text=icon" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="offer-features ml-n2">
+                                                <ul class="fa-ul">
+                                                    <li>
+                                                        <span class="fa-li">
+                                                            <i class="fas fa-check fa-sm"></i>
+                                                        </span>
+                                                        High-speed modem
+                                                    </li>
+                                                    <li>
+                                                        <span class="fa-li">
+                                                            <i class="fas fa-check fa-sm"></i>
+                                                        </span>
+                                                        Advanced whole-home WiFi
+                                                    </li>
+                                                    <li>
+                                                        <span class="fa-li">
+                                                            <i class="fas fa-check fa-sm"></i>
+                                                        </span>
+                                                        Unlimited data
+                                                    </li>
+                                                    <li>
+                                                        <span class="fa-li">
+                                                            <i class="fas fa-check fa-sm"></i>
+                                                        </span>
+                                                        Moderate streaming
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="offer-price offer-price-inactive">
+                                                <div>
+                                                    <strong>Monthly price</strong>
+                                                </div>
+                                                <div class="text-decoration-line-through h5">$139.98</div>
+                                            </div>
+                                            <div class="offer-price">
+                                                <div class="mb-3 fz-sm">
+                                                    <strong>6 month promotional price</strong>
+                                                </div>
+                                                <div class="pricetag">
+                                                    <div class="pricetag-body">
+                                                        <div class="pricetag-price d-flex align-items-end">
+                                                            <div class="pricetag-figure display-4 font-weight-bold">
+                                                                $59
+                                                            </div>
+                                                            <div class="pricetag-tooltip">
+                                                                <a class="link-primary" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"><i class="fas fa-info-circle"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="offer-footer">
+                                            <div class="mb-2">
+                                                <a class="btn btn-primary btn-block" href="">Check Availability</a>
+                                            </div>
+                                            <div>
+                                                <a class="btn btn-link btn-block" href="">More Details</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
-                                    <div class="card mb-4 mb-lg-0">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Product Two</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="offer">
+                                    <div class="offer-standout">
+                                        Most popular internet service
+                                    </div>
+                                    <div class="offer-body">
+                                        <div class="offer-header">
+                                            <div class="offer-heading">Fast Internet</div>
+                                            <div class="offer-subheading font-weight-bold">1000Mbps</div>
+                                        </div>
+                                        <div class="offer-torso">
+                                            <div class="offer-icons">
+                                                <div class="row align-items-center justify-content-start gx-3">
+                                                    <div class="col-auto">
+                                                        <div class="offer-icon">
+                                                            <img class="rounded-circle" src="https://dummyimage.com/54x54/b3b3b3/ffffff.png&text=icon" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="offer-icon">
+                                                            <img class="rounded-circle" src="https://dummyimage.com/54x54/b3b3b3/ffffff.png&text=icon" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="offer-icon">
+                                                            <img class="rounded-circle" src="https://dummyimage.com/54x54/b3b3b3/ffffff.png&text=icon" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="offer-features ml-n2">
+                                                <ul class="fa-ul">
+                                                    <li>
+                                                        <span class="fa-li">
+                                                            <i class="fas fa-check fa-sm"></i>
+                                                        </span>
+                                                        High-speed modem
+                                                    </li>
+                                                    <li>
+                                                        <span class="fa-li">
+                                                            <i class="fas fa-check fa-sm"></i>
+                                                        </span>
+                                                        Advanced whole-home WiFi
+                                                    </li>
+                                                    <li>
+                                                        <span class="fa-li">
+                                                            <i class="fas fa-check fa-sm"></i>
+                                                        </span>
+                                                        Unlimited data
+                                                    </li>
+                                                    <li>
+                                                        <span class="fa-li">
+                                                            <i class="fas fa-check fa-sm"></i>
+                                                        </span>
+                                                        Moderate streaming
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="offer-price offer-price-inactive">
+                                                <div>
+                                                    <strong>Monthly price</strong>
+                                                </div>
+                                                <div class="text-decoration-line-through h5">$139.98</div>
+                                            </div>
+                                            <div class="offer-price">
+                                                <div class="mb-3 fz-sm">
+                                                    <strong>6 month promotional price</strong>
+                                                </div>
+                                                <div class="pricetag">
+                                                    <div class="pricetag-body">
+                                                        <div class="pricetag-price d-flex align-items-end">
+                                                            <div class="pricetag-figure display-4 font-weight-bold">
+                                                                $79
+                                                            </div>
+                                                            <div class="pricetag-tooltip">
+                                                                <a class="link-primary" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"><i class="fas fa-info-circle"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="offer-footer">
+                                            <div class="mb-2">
+                                                <a class="btn btn-primary btn-block" href="">Check Availability</a>
+                                            </div>
+                                            <div>
+                                                <a class="btn btn-link btn-block" href="">More Details</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
-                                    <div class="card mb-4 mb-lg-0">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Product Three</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="offer">
+                                    <div class="offer-body">
+                                        <div class="offer-header">
+                                            <div class="offer-heading">Fast Internet</div>
+                                            <div class="offer-subheading font-weight-bold">1000Mbps</div>
+                                        </div>
+                                        <div class="offer-torso">
+                                            <div class="offer-icons">
+                                                <div class="row align-items-center justify-content-start gx-3">
+                                                    <div class="col-auto">
+                                                        <div class="offer-icon">
+                                                            <img class="rounded-circle" src="https://dummyimage.com/54x54/b3b3b3/ffffff.png&text=icon" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="offer-icon">
+                                                            <img class="rounded-circle" src="https://dummyimage.com/54x54/b3b3b3/ffffff.png&text=icon" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="offer-icon">
+                                                            <img class="rounded-circle" src="https://dummyimage.com/54x54/b3b3b3/ffffff.png&text=icon" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="offer-features ml-n2">
+                                                <ul class="fa-ul">
+                                                    <li>
+                                                        <span class="fa-li">
+                                                            <i class="fas fa-check fa-sm"></i>
+                                                        </span>
+                                                        High-speed modem
+                                                    </li>
+                                                    <li>
+                                                        <span class="fa-li">
+                                                            <i class="fas fa-check fa-sm"></i>
+                                                        </span>
+                                                        Advanced whole-home WiFi
+                                                    </li>
+                                                    <li>
+                                                        <span class="fa-li">
+                                                            <i class="fas fa-check fa-sm"></i>
+                                                        </span>
+                                                        Unlimited data
+                                                    </li>
+                                                    <li>
+                                                        <span class="fa-li">
+                                                            <i class="fas fa-check fa-sm"></i>
+                                                        </span>
+                                                        Moderate streaming
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="offer-price offer-price-inactive">
+                                                <div>
+                                                    <strong>Monthly price</strong>
+                                                </div>
+                                                <div class="text-decoration-line-through h5">$139.98</div>
+                                            </div>
+                                            <div class="offer-price">
+                                                <div class="mb-3 fz-sm">
+                                                    <strong>6 month promotional price</strong>
+                                                </div>
+                                                <div class="pricetag">
+                                                    <div class="pricetag-body">
+                                                        <div class="pricetag-price d-flex align-items-end">
+                                                            <div class="pricetag-figure display-4 font-weight-bold">
+                                                                $99
+                                                            </div>
+                                                            <div class="pricetag-tooltip">
+                                                                <a class="link-primary" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"><i class="fas fa-info-circle"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="offer-footer">
+                                            <div class="mb-2">
+                                                <a class="btn btn-primary btn-block" href="">Check Availability</a>
+                                            </div>
+                                            <div>
+                                                <a class="btn btn-link btn-block" href="">More Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="offer">
+                                    <div class="offer-body">
+                                        <div class="offer-header">
+                                            <div class="offer-heading">Fast Internet</div>
+                                            <div class="offer-subheading font-weight-bold">1000Mbps</div>
+                                        </div>
+                                        <div class="offer-torso">
+                                            <div class="offer-icons">
+                                                <div class="row align-items-center justify-content-start gx-3">
+                                                    <div class="col-auto">
+                                                        <div class="offer-icon">
+                                                            <img class="rounded-circle" src="https://dummyimage.com/54x54/b3b3b3/ffffff.png&text=icon" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="offer-icon">
+                                                            <img class="rounded-circle" src="https://dummyimage.com/54x54/b3b3b3/ffffff.png&text=icon" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="offer-icon">
+                                                            <img class="rounded-circle" src="https://dummyimage.com/54x54/b3b3b3/ffffff.png&text=icon" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="offer-features ml-n2">
+                                                <ul class="fa-ul">
+                                                    <li>
+                                                        <span class="fa-li">
+                                                            <i class="fas fa-check fa-sm"></i>
+                                                        </span>
+                                                        High-speed modem
+                                                    </li>
+                                                    <li>
+                                                        <span class="fa-li">
+                                                            <i class="fas fa-check fa-sm"></i>
+                                                        </span>
+                                                        Advanced whole-home WiFi
+                                                    </li>
+                                                    <li>
+                                                        <span class="fa-li">
+                                                            <i class="fas fa-check fa-sm"></i>
+                                                        </span>
+                                                        Unlimited data
+                                                    </li>
+                                                    <li>
+                                                        <span class="fa-li">
+                                                            <i class="fas fa-check fa-sm"></i>
+                                                        </span>
+                                                        Moderate streaming
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="offer-price offer-price-inactive">
+                                                <div>
+                                                    <strong>Monthly price</strong>
+                                                </div>
+                                                <div class="text-decoration-line-through h5">$139.98</div>
+                                            </div>
+                                            <div class="offer-price">
+                                                <div class="mb-3 fz-sm">
+                                                    <strong>6 month promotional price</strong>
+                                                </div>
+                                                <div class="pricetag">
+                                                    <div class="pricetag-body">
+                                                        <div class="pricetag-price d-flex align-items-end">
+                                                            <div class="pricetag-figure display-4 font-weight-bold">
+                                                                $129
+                                                            </div>
+                                                            <div class="pricetag-tooltip">
+                                                                <a class="link-primary" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"><i class="fas fa-info-circle"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="offer-footer">
+                                            <div class="mb-2">
+                                                <a class="btn btn-primary btn-block" href="">Check Availability</a>
+                                            </div>
+                                            <div>
+                                                <a class="btn btn-link btn-block" href="">More Details</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
 
-                <div class="layer bg-info text-white py-6">
+                <div class="layer bg-warning py-6">
                     <div class="container-xxl">
                         <div class="row justify-content-md-between align-items-md-center">
                             <div class="col-lg-6 mb-4 mb-lg-0">
@@ -342,13 +687,13 @@
                                 </div>
                             </div>
                             <div class="col-md-auto">
-                                <a href="" class="btn btn-secondary">Test Your Speed</a>
+                                <a href="" class="btn btn-primary">Test Your Speed</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="layer py-8 marketing-copy">
+                <div class="layer">
                     <div class="container-lg">
                         <h1 class="text-center mb-7">
                             Lorem ipsum dolor sit amet consectetur adipiscing elit
@@ -407,7 +752,7 @@
                                 <h2>Pair TV With Our Reliable Internet</h2>
                                 <p class="mb-5">Add TV to our high-speed internet and get the power to stream apps like Prime Video and Netflix or watch live TV from any device in the house.</p>
 
-                                <div class="d-flex">
+                                <!-- <div class="d-flex">
                                     <div class="mx-2 my-2">
                                         <img src="https://atlanticbb.com/sites/all/themes/progressive/progressive_sub/images/logo__usa_inverted.png" alt="">
                                     </div>
@@ -432,31 +777,43 @@
                                     <div class="mx-2 my-2">
                                         <img src="https://atlanticbb.com/sites/all/themes/progressive/progressive_sub/images/logo__id_inverted.png" alt="">
                                     </div>
+                                </div> -->
+
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="row mb-4">
+                                            <div class="col">
+                                                <img src="https://atlanticbb.com/sites/all/themes/progressive/progressive_sub/images/logo__usa_inverted.png" alt="">
+                                            </div>
+                                            <div class="col">
+                                                <img src="https://atlanticbb.com/sites/all/themes/progressive/progressive_sub/images/logo__espn_inverted.png" alt="">
+                                            </div>
+                                            <div class="col">
+                                                <img src="https://atlanticbb.com/sites/all/themes/progressive/progressive_sub/images/logo__hallmark_inverted.png" alt="">
+                                            </div>
+                                            <div class="col">
+                                                <img src="https://atlanticbb.com/sites/all/themes/progressive/progressive_sub/images/logo__hgtv_inverted.png" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col">
+                                                <img src="https://atlanticbb.com/sites/all/themes/progressive/progressive_sub/images/logo__nick_inverted.png" alt="">
+                                            </div>
+                                            <div class="col">
+                                                <img src="https://atlanticbb.com/sites/all/themes/progressive/progressive_sub/images/logo__tbs_inverted.png" alt="">
+                                            </div>
+                                            <div class="col">
+                                                <img src="https://atlanticbb.com/sites/all/themes/progressive/progressive_sub/images/logo__id_inverted.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-
-
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-                <div class="layer marketing-copy">
-                    <div class="container-xxl">
-
-                    </div>
-                </div>
-
-
-
-
-
             </main>
-
-
-
-
-
 
 
             <footer class="footer-primary">

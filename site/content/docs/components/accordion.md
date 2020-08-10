@@ -43,23 +43,25 @@ toc: true
 </div>
 {{< highlight html>}}
 <div class="accordion accordion-primary" id="accordionExample0">
-    <div class="accordion-item my-2">
+    <div class="accordion-item">
         <button class="btn accordion-trigger collapsed" id="heading0-1" type="button" data-toggle="collapse" data-target="#collapse0-1" aria-expanded="true" aria-controls="collapse0-1">
-            <div class="d-flex align-items-start">
-                <div class="accordion-heading flex-grow-1">
-                    Donec sed odio dui
+            <div class="accordion-header">
+                <div class="accordion-heading">
+                    Donec sed odio dui  
                 </div>
-                <div class="accordion-icon ml-3">
+                <div class="accordion-icon">
                     <i class="fas fa-chevron-up"></i>
                 </div>
             </div>
         </button>
         <div id="collapse0-1" class="collapse" aria-labelledby="heading0-1" data-parent="#accordionExample0">
             <div class="accordion-body">
-                <div class="accordion-heading h3">
-                    Commodo Fermentum Mollis Tellus Nullam
+                <div class="h3">
+                    Lorem ipsum dolar
                 </div>
-                …
+                <p>
+                    Enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                </p>
             </div>
         </div>
     </div>
