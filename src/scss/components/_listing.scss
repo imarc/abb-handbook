@@ -1,0 +1,18 @@
+/**
+ * Components > Listing
+ */
+
+.listing-heading {
+    @extend %heading;
+    @include font-size($h3-font-size);
+}
+
+.listing-item {
+    border-bottom: $listing-item-border-width solid $listing-item-border-color;
+    @include padding-bottom($listing-item-padding-y);
+    @include padding-top($listing-item-padding-y);
+}
+
+.listing-summary {
+    margin-bottom: $paragraph-margin-bottom;
+}

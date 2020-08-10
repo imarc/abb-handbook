@@ -1299,12 +1299,26 @@ $pre-color: null !default;
 
 // Layers
 
-$layer-padding-y: 5rem;
+$layer-padding-y: map-get($spacers, 9);
 
 
 // Hero
 
 $hero-padding-y: $layer-padding-y;
+
+
+// Listing
+
+$listing-item-border-width: $border-width;
+$listing-item-border-color: $border-color;
+$listing-item-padding-y: map-get($spacers, 4);
+
+
+// Meta
+
+$meta-color: $gray-600;
+$meta-border-color: $border-color;
+$meta-margin-bottom: $paragraph-margin-bottom;
 
 
 // Offer

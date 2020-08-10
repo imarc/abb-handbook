@@ -1,0 +1,38 @@
+/**
+ * Components > Meta
+ */
+
+.meta {
+    color: $meta-color;
+    margin-bottom: $meta-margin-bottom;
+    @include media-breakpoint-up(md) {
+        display: flex;
+    }
+}
+
+.meta-item {
+    position: relative;
+    @include media-breakpoint-up(md) {
+        margin-left: $meta-margin-bottom / 2;
+        padding-left: $meta-margin-bottom / 2;
+        &::before {
+            background-color: $meta-border-color;
+            content: '';
+            display: block;
+            height: 0.85rem;
+            left: 0;
+            margin-top: -0.425rem;
+            position: absolute;
+            top: 50%;
+            width: 1px;
+        }
+        &:first-of-type {
+            border: 0;
+            margin-left: 0;
+            padding-left: 0;
+        }
+        &:first-of-type::before {
+            display: none;
+        }
+    }
+}
