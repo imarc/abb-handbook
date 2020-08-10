@@ -1,6 +1,6 @@
 ---
 title: 'Buttons'
-description: 'This is my buttons description.'
+description: 'A wide variety of buttons are available to us, with guidance on how to write custom buttons.'
 group: 'components'
 bootstrapLink: true
 bootstrapSection: 'components'
