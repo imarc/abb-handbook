@@ -8,13 +8,14 @@
 
 - title: Development
   pages:
-    - title: Frontend overview
+    - title: Overview
     - title: Containers
     - title: Breakpoints
     - title: Spacers system
     - title: Grid
     - title: Iconography
     - title: Sass
+    - title: Guidelines
 
 - title: Components
   pages:

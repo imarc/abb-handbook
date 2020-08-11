@@ -18,4 +18,9 @@ and external. Resources span across multiple departments:
 
 <h1 class="display-4 font-weight-bolder">Zenith</h1>
 
-{{< youtube TE3CKaeyHHg >}}
+<div class="row">
+    <div class="col-xl-10">
+        {{< youtube TE3CKaeyHHg >}}
+    </div>
+</div>
+

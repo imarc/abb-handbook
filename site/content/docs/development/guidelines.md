@@ -1,5 +1,5 @@
 ---
-title: 'Frontend Overview'
+title: 'Guidelines'
 description: 'How user interface components are conceptualized and implemented.'
 date: 2020-07-22
 group: 'development'

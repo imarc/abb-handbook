@@ -15,7 +15,9 @@
 .layer-primary {
     @include layer-variant($primary);
 }
-
+.baxy {
+    color: $blue-100;
+}
 .layer-light {
     @include layer-variant($gray-200);
 }
