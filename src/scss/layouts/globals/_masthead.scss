@@ -73,8 +73,8 @@
 
 
 .masthead-toggle {
-    background-color: transparent;
-    border: 0;
+    background-color: $gray-100;
+    border: 1px solid $border-color;
     color: $primary;
     height: 50px;
     padding: 0;
@@ -87,10 +87,6 @@
     &:hover .masthead-toggle-pipe:nth-child(3) {
         top: 26px;
         transition: 200ms cubic-bezier(0.8, 0.5, 0.2, 1.4);
-    }
-    &:hover,
-    &:focus {
-        outline: 0;
     }
 }
 

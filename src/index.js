@@ -18,6 +18,10 @@ document.addEventListener(
   "DOMContentLoaded", () => {
     // eslint-disable-next-line no-undef
     const menu = new Mmenu("#nav-mobile", {
+      keyboardNavigation: {
+        enable: true,
+        enhance: true
+      },
       onClick: true,
       extensions: [
         "border-full",

@@ -4,6 +4,7 @@
     {{ partial "head" . }}
 
     <body class="h-100">
+        <a href="#main" class="sr-only-focusable skippy">Skip to main content</a>
         <div class="hb-shell d-flex flex-column h-100">
             <div class="flex-grow-1">
                 {{ block "main" . }} {{end}}
